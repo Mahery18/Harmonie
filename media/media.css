@@ -1,0 +1,6697 @@
+/* En dessous de 768px */
+
+@media screen and (max-width: 767px) {
+
+                                        /* MEDIA PREMIERE PAGE 767 */
+
+
+    .wp_header {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .cnt_img {
+        margin: 0.1rem 0 1rem 2rem;
+        align-self: flex-start;
+    }
+
+    .header_logo {
+        width: 17rem;
+        margin: 1rem;
+    }
+
+    .burger_menu {
+        display: flex;
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem; 
+        flex-direction: column;
+        gap: 0.5rem;
+        cursor: pointer;
+        z-index: 3; 
+        width: 35px; 
+        height: 25px; 
+        justify-content: center;
+    }
+
+    .burger_menu span {
+        width: 100%; 
+        height: 3px;
+        background: #000;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    /* Transformation en croix lorsque le menu est ouvert */
+    .burger_menu.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 8px; 
+    }
+
+    .burger_menu.active span:nth-child(2) {
+        opacity: 0; 
+    }
+
+    .burger_menu.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -8px;
+    }
+
+    .nav_menu {
+        display: none; 
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh; 
+        background: #fff; 
+        z-index: 1;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+    }
+
+    .nav_menu.active {
+        display: flex ; 
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: center; 
+        padding-top: 2rem;
+    }
+
+    .header_menu_element {
+        flex-direction: column;
+        gap: 0.1rem;
+        font-size: 1.6rem; 
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .header_menu_element li {
+        width: 100%;
+    }
+
+    .header_menu_element li a {
+        display: block;
+        padding: 1.5rem; 
+        color: #000; 
+        text-decoration: none;
+    }
+
+    /* Masquer le pseudo-élément ::after lorsque le menu est ouvert */
+    .nav_menu.active .header_menu_element::after {
+        display: none;
+    }
+
+    /* Masquer l'élément separator lorsque le menu est ouvert */
+    .nav_menu.active .separator {
+        display: none;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+        height: 100vh;
+        position: fixed; 
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+
+/* SECTION INTRO */
+
+    .cnt-1810 {
+        max-width: 95rem;
+    }
+
+    .wp_intro {
+        max-width: 100rem;
+        margin: 5rem auto;
+        margin-bottom: 0.1rem;
+    }
+
+    .intro_menu {
+        margin: auto;
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .intro_menu a:not(:last-child)::after {
+        content: ">";
+        margin: 0 1rem;
+        color: #333;
+    }
+
+    .intro_titre {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin: 2rem auto;
+    }
+
+    .intro_menu1 {
+        flex-direction: row;
+        gap: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .intro_paragraphe {
+        font-size: 1.5rem;
+        max-width: 34rem;
+        margin: 3rem auto;
+    }
+
+/* SECTION INTRO IMAGE */
+
+    .intro_img {
+        max-width: 37rem;
+        margin: auto;
+    }
+
+
+/* SIGNIFICANCE HARMONIE */
+
+    .cnt_sh {
+        max-width: 35rem;
+        margin: 0.5rem auto;
+        font-size: 1.4rem;
+    }
+
+    .wp_sh {
+        margin: auto;
+        max-width: 34rem;
+    }
+
+    .wp_sh h2 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+        max-width: 34rem;
+    }
+
+    .wp_sh p {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+     
+
+/* QUOTE SECTION */
+
+.cnt-1020 {
+    max-width: 30.1rem;
+}
+
+.quote_image {
+    width: 3rem;
+}
+
+.quote_paragraphe {
+    font-size: 1.6rem;
+}
+
+.signature {
+    font-size:1.5rem;
+    margin-right: 1rem;
+}
+
+/* HARMONIE VISION */
+
+    .cnt_1300 {
+        width: 95rem; 
+    }
+
+    .wp_harmonie {
+        flex-direction: column;
+        margin: auto;
+        gap: 3rem;
+    }
+
+    .img_harmonie {
+        width: 34rem;
+        margin: auto;
+    }
+
+    .img_piscine1 {
+        width: 100%;
+    }
+
+    .element_liste {
+        font-size: 1.6rem; 
+        text-align: left;
+        width: 90%;
+        margin: 1rem auto;
+    }
+     
+    .element_harmonie {
+        width: 90%;
+        margin: auto;
+    }
+
+    .element_harmonie h3 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .element_liste h3 {
+        font-size: 2.6rem;
+        line-height: 3.5rem;
+        margin-bottom: 0.5rem;
+
+    }
+    .element_harmonie p {
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        width: 95%; 
+    }
+    .harmonie_contenu {
+        padding-left: 2rem;
+        max-width: 100%;
+    }
+
+    .element_harmonie h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        line-height: 2.8rem;
+        margin-top: 1rem;
+    }
+
+    .harmonie_liste li {
+        font-size: 1.2rem; 
+        margin-bottom: 1rem;
+    }
+
+/* section imagevue */
+
+.wp_imagevue {
+    display: flex;
+    flex-direction: column;
+}
+
+.img_vue {
+    width: 95%;
+    margin: 3rem auto;
+}
+
+/* ENVIRONMENTAL SECTION */
+
+    .section_environmental {
+        margin-top: 2rem;
+        padding-top: 3rem;
+    }
+    
+    .element_environmental {
+        max-width: 100%;
+    }
+
+    .wp_environmental h2 {
+        font-size: 2.2rem;
+        width: 30rem;
+        line-height: 3rem;
+        margin-bottom: 2.8rem;   
+    }
+
+    .wp_environmental p {
+        font-size: 1.4rem;
+        width: 30rem;
+        margin:  auto;
+        text-align: center;
+    } 
+    
+    .img_environmental {
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem auto;
+    }
+
+    .coco_img {
+        max-width: 100%;
+    }
+
+    .bordmer_img {
+        max-width: 100%;
+    }
+
+/* NATURE SECTION */
+
+    .cnt_1310 {
+        margin: 2rem auto;
+    }
+
+    .wp_nature {
+        max-width: 33rem;
+        flex-direction: column;
+        margin: 4rem auto;
+        gap: 1rem;
+    }
+
+    .element_nature {
+        max-width: 100%;
+    }
+
+    .element_nature h2 {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .element_nature p {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .img_piscinebord {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        bottom: 1.5rem;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+
+    .nature_liste {
+        margin: 1.5rem 1rem 3rem 1.5rem;
+    }
+
+    .element_nature h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .nature_liste li {
+        font-size: 1.2rem;
+    }
+
+    .section_nature::after {
+        bottom: 0;
+        left: 4rem;
+        width: 30rem;
+    }
+     
+/* RESOURCE SECTION */
+
+    .cnt-1430 {
+        max-width: 40rem;
+        margin: 2rem auto;
+    }
+
+    .wp_ressource {
+        flex-direction: column;
+        max-width: 95rem;
+        margin: auto;
+        position: relative;
+        padding: 0;
+        gap: 3rem;
+    }
+
+    .img_ressource {
+        margin: auto;
+        max-width: 35rem;
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    .img_bateau {
+        width: 34.3rem;
+    }
+
+    .ressource_element {
+       width: 32rem;
+       margin: 0 auto;
+    }
+
+    .ressource_element h2 {
+        font-size: 2.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .ressource_element h3 {
+       margin-bottom: 0.5rem;
+       font-size: 1.8rem;
+    }
+
+    .ressource_element p {
+        font-size: 1.6rem;
+    }
+
+    .ressource_element li {
+       margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    .section_ressource::after {
+        left: 5rem;
+        width: 26rem;
+    }
+
+/* ENERGY SECTION */
+
+    .wp_energy {
+        width: 32rem;
+        margin: 4rem auto;
+    }
+
+    .wp_energy {
+        flex-direction: column;
+    }
+
+    .element_energy h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .img_piscine2 {
+        max-width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .element_energy p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .energy_liste {
+        margin: 1rem auto;
+    }
+
+    .energy_liste .no-bullet {
+        margin-bottom: 2rem;
+    }
+
+    .energy_liste h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .energy_liste li {
+        font-size: 1.2rem;
+    }
+
+/* HARMONIE COMMUNITY */
+
+    .section_harmoniecommunity {
+        margin-top: 1rem;
+    }
+
+    .cnt_harmoniecommunity {
+        padding: 0;
+    }
+
+    .wp_harmoniecommunity {
+        padding: 0;
+    }
+
+    .img_harmoniecommunity {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 2rem;
+    }
+
+    .element_harmoniecommunity {
+        width: 95%;
+    }
+
+    .wp_harmoniecommunity h2 {
+        text-align: center;
+        font-size: 2.3rem;
+        width: 85%;
+        margin: 4rem auto;
+        line-height: 3rem;
+    }
+
+     .wp_harmoniecommunity p {
+        font-size: 1.6rem;
+        margin-top: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .yatch_img {
+        width: 100%;
+    }
+    .couchesoleil_img {
+        width: 100%;
+    }
+
+    .wp_harmoniecommunity .hc_para {
+        text-align: center;
+    }
+
+
+/* CLIMATE HARMONIE */
+
+    .wp_cha {
+        width: 33rem;
+        margin: 4rem auto;   
+    }
+
+    .wp_cha h2 {
+        font-size: 2rem;
+        line-height: 2.8rem;  
+    }
+
+    .element_climateharmonie p {
+        font-size: 1.6rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .wp_cha h3 {
+        font-size: 1.8rem;
+    }
+
+    .img_climateharmonie {
+        flex-direction: column;
+        margin: 3rem auto;
+        max-width: 100%;
+    }
+
+    .element_climateharmonie a {
+        width: 65%;
+        display: inline-block;
+        background-color: #E6DDCB;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        color: #333;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+
+    .bordepiscinemer, .route, .bateauplonge {
+        width: 32rem;
+        margin: auto;
+    }
+
+/* SIGNIFICANCE HARMONIE 2 */
+
+    .wp_sh_2 {
+        width: 33rem;
+        margin: auto;
+    }
+    
+    .wp_sh_2 h2 {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    .wp_sh_2 p {
+        font-size: 1.5rem;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 1rem
+    }
+
+    .wp_sh_2 a {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .section_significanceharmonie_2::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -4rem;
+        left: 4rem;
+        width: 28rem;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* RELATED NEWS */
+
+    .section_relatednews {
+        margin: 7.5rem auto;
+        display: flex;
+    }
+
+    .wp_relatednews {
+        max-width: 34rem;
+    }
+
+    .wp1 h2 {
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
+    }
+
+    .related_img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image_mains {
+        width: 100%;
+    }
+
+    .image_mains_1 {
+        width: 100%;
+    }
+
+    .image_mains_2 {
+        width: 100%;
+    }
+    
+    .menu1, .menu2, .menu3 {
+        gap: 4rem;
+    }
+
+    .related_img h3 {
+        font-size: 1.5rem;
+        margin: 1rem auto;
+    }
+
+    .related_img p {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+/* FOOTER */
+
+    .wp_footer {
+        flex-direction: column;
+    }
+
+    .image_footer {
+        margin: auto;
+    }
+
+    .footer_logo {
+        width: 90%;
+        margin-bottom: 4rem;
+        margin-left: 5%;
+    }
+
+    .menu1_footer,
+    .follow_us,
+    .contact_us {
+        width: 100%;
+        max-width: 56%;
+        margin: auto;
+    }
+    
+    .follow_us h2, .contact_us h2 {
+        margin-top: 2rem;
+    }
+
+    .follow_us_menu {
+        width: 100%;
+        display: inline;
+    }
+
+    .linkden { 
+        width: 25%;
+        height: auto;
+    }
+    .facebook { 
+        width: 25%;
+        height: auto;
+    }
+    .insta { 
+        width: 25%;
+        height: auto;
+    }
+
+
+                                /* MEDIA DEUXIEME PAGE 767 */
+
+
+    /* HEADER */
+
+    .cnt_img {
+        margin: 0.8rem 0 1rem 3.5rem;
+        max-width: 20rem;
+    }
+
+    
+    /* Transformation en croix lorsque le menu est ouvert */
+
+    .burger_menu.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 8px; 
+    }
+
+    .burger_menu.active span:nth-child(2) {
+        opacity: 0; 
+    }
+
+    .burger_menu.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -8px; 
+    }
+
+    .nav-menu {
+        display: none; 
+        width: 100%;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        height: 100vh; 
+        background: #fff; 
+        z-index: 1;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        display: flex ; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .nav_menu_element {
+        flex-direction: column;
+        gap: 0.1rem;
+        font-size: 1.6rem;
+        width: 26rem;
+        padding: 1rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav_menu_element li {
+        width: 100%;
+    }
+
+    .nav_menu_element li a {
+        display: block;
+        padding: 1.5rem; 
+        color: #000; 
+        text-decoration: none;
+    }
+
+    .nav-menu.active .nav_menu_element::after {
+        display: none;
+    }
+
+    .nav-menu.active .separator {
+        display: none;
+    }
+
+
+/* SECTION VILLA_N */
+
+.section_villaN {
+    padding: 4rem 0 0;
+}
+
+.wp_villaN {
+    flex-direction: column;
+}
+
+.menu_section_villaN {
+    font-size: 1.4rem;
+    gap: 0rem;
+    width: 35rem;
+}
+
+.box-left {
+    width: 31rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.elements1_section_villaN {
+    flex-direction: column;
+}
+
+.elements1_section_villaN h3 {
+    margin-top: 0;
+}
+
+.elements1_section_villaN p {
+    margin-bottom: 0rem;
+}
+
+.villaN_textes {
+    margin-bottom: 1rem;
+}
+
+.menu_section_villaN a:not(:last-child)::after {
+    margin: 0 1rem 2rem;
+}
+
+
+.elements1_section_villaN {
+    gap: 0rem;
+}
+
+.elements1_section_villaN::after {
+    top: 36rem;
+    width: 30rem;
+}
+
+.btn_learnmore {
+    margin-top: 2rem;
+}
+
+.box-right {
+    width: 32rem;
+    margin: 6rem auto;
+}
+
+
+/* SECTION VIRTUAL TOUR */
+
+
+.wp_vtour {
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    gap: 0.5rem;
+}
+
+.img1 {
+    max-width: 35.4rem;
+}
+
+.img2_text {
+    flex-direction: column;
+    margin-left: 0;
+}
+
+.img2_vtour {
+    width: 35.4rem;
+}
+
+.link_section_vtour a {
+    padding: 2rem 9.9rem;
+}
+
+/* SECTION GOLF VILLA */
+
+.section_golfvilla {
+    padding-top: 2rem;
+}
+
+.wp_golfvilla {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem 0 1.5rem;
+    gap: 4rem;
+}
+
+.golfvilla_titre {
+    line-height: 3.9rem;
+    font-size: 3rem;
+}
+
+.text_section_golfvilla {
+    margin-top: 3rem;
+    max-width: 34rem;
+}
+
+.cnt_img_section_golfvilla {
+    width: 34rem;
+    margin: 0;
+}
+
+/* SECTION DESCRIPTION VILLA N */
+
+.section_descvillan {
+    background-color: #777269;
+    margin: 5rem 0 0;
+}
+
+.wp_descvillan {
+    padding: 3rem 0rem;
+}
+
+.text_section_descvillan {
+    width: 30rem;
+}
+
+.descvillan_titre {
+    font-size: 2.9rem;
+}
+
+.descvillan_paragraphe  {
+    margin: 4rem auto;
+}
+
+.img_section_descvillan {
+    flex-direction: column;
+    margin: auto;
+    width: 32rem;
+}
+
+/* SECTION STYLE */
+
+.section_preferredstyle {
+    margin-bottom: 5rem;
+}
+
+.text_section_preferredstyle {
+    padding-top: 10rem;
+    font-size: 2.5rem;
+}
+
+.textes_section_preferredstyle {
+    flex-direction: column;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    gap: 1rem;
+}
+
+.texte1 {
+    margin-top: 3rem;
+    position: relative;
+}
+
+.texte1::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 0.5px;
+    left: 0;
+    margin-top: 7rem;
+}
+
+.texte2 {
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.texet2_titre {
+    margin-top: 1rem;
+    font-size: 3.2rem;
+}
+
+.texte3 {
+    margin-top: 4rem;
+    position: relative;
+}
+
+.texte3::before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 1.5px;
+    left: 0;
+    bottom: 6rem;
+}
+
+.section_preferredstyle::before {
+  left: 29%;
+  display: none;
+}
+
+.section_preferredstyle::after {
+  left: 72%;
+  display: none;
+}
+
+/* SECTION WHYBUY */
+
+.wp_whybuy {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0rem 2rem;
+}
+
+.titre_whybuy {
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+
+.paragraphe_whybuy {
+    max-width: 34rem;
+}
+
+.paragraphe1_whybuy {
+    font-size: 2.1rem;
+}
+
+.wp_whybuy::after {
+    margin: auto;
+    width: 33rem;
+    top: 88rem;
+}
+
+/* SECTION ADVANTAGES */
+
+.wp_advantages {
+    margin: 1rem auto;
+}
+
+.textes_advantages {
+    width: 90%;
+    margin: 9rem 2rem 4rem 2rem;
+}
+
+.titre_advantages {
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+}
+
+.paragraphe_advantages {
+    margin-bottom: 0;
+}
+
+.img_advantages {
+    display: flex;
+    flex-direction: column;
+    width: 34rem;
+}
+
+/* SECTION CONTACT (TEXTES) */
+
+.section_contact {
+    margin-top: 6rem;
+}
+
+.wp_contact {
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+.titre_contact {
+    max-width: 32rem;
+}
+
+.textes_contact {
+    margin: 5rem 1rem 3rem 3rem;
+}
+
+/* SECTION CONTACT (FORM) */
+
+.contact_form {
+  width: 30rem; 
+  margin: 5rem 1rem 3rem 3rem;
+}
+
+.noms_contact {
+    flex-direction: column;
+    margin: 1rem 2rem auto;
+}
+
+.noms_contact input {
+    width: 28rem;
+}
+
+.email {
+    margin: 5rem 2rem auto 1rem;
+}
+
+.email input {
+    width: 28rem;
+    margin: 2rem 2rem auto 1rem;
+}
+
+.country_phone {
+    flex-direction: column;
+    margin: 5rem 1rem 1rem 2rem;
+}
+
+.country_phone input {
+    width: 28rem;
+}
+
+.message {
+    margin: 5rem 2rem auto 1rem;
+}
+
+.message_titre {
+    margin-left: 1rem;
+}
+
+.message input {
+    width: 28rem;
+    margin: 2rem 2rem auto 1rem;
+}
+
+.submit_btn a {
+    margin-left: 2rem;
+}
+
+.checkbox_liste {
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.texte_check {
+    color: white;
+    font-size: 1.6rem;
+}
+
+/* SECTION MORE VILLAS */
+
+.wp_morevillas {
+    margin: 7rem auto;
+}
+
+.titre_morevillas {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+.img_morevillas {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cnt_img_morevillas {
+    width: 35rem;
+    margin: auto;
+}
+
+.texte_morevillas {        
+    left: 2rem;           
+    font-size: 2.5rem;
+}
+
+/* FOOTER */
+
+.wp_footer {
+    gap: 0; 
+}    
+
+}
+
+/* entre 768px et 1024px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+                                /* MEDIA PREMIERE PAGE 768-1023 */
+
+
+/* HEADER */
+
+    .cnt_img {
+        max-width: 45.2rem;
+        margin: 0 auto;
+    }
+
+    .nav_menu_element {
+        margin: 2rem auto;
+        align-items: center;
+        gap: 1.3rem;
+        max-width: 100%;
+    }
+
+    .nav_menu_element li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.1rem;
+    }
+
+    .nav_menu_element::after {
+        width: 100%;
+    }
+
+/* SECTION INTRO */
+
+    .wp_intro {
+        max-width: 70rem;
+        margin: 5.5rem auto;
+    }
+
+    .intro_menu {
+        font-size: 1.3rem;
+    }
+
+    .intro_titre {
+        max-width: 74.8rem;
+        font-size: 4rem;
+        line-height: 4.5rem;
+        margin: 2.5rem auto;
+    }
+
+    .intro_menu1 {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .intro_paragraphe {
+        font-size: 1.8rem;
+        max-width: 100%;
+        margin: 3.5rem auto;
+    }
+
+    .wp_img_principale {
+        width: 95%;
+    }
+
+    .intro_img {
+        max-width: 100%;
+    }
+
+/* SIGNIFICANCE HARMONIE */
+
+    .cnt-1300 {
+        margin: auto;
+        max-width: 70rem;
+    }
+
+    .wp_sh {
+        margin: 5rem auto;
+    }
+
+    .wp_sh h2 {
+        font-size: 2.2rem;
+        max-width: 95%;
+        margin: auto;
+    }
+
+    .wp_sh p {
+        font-size: 1.8rem;
+        width: 73rem;
+        margin: 1rem 2rem 2rem 2rem;
+    }
+
+    .wp_sh a {
+        width: 16rem;
+        margin: 1rem auto;
+        margin-left: 2.5%;
+    }
+    
+/* QUOTE SECTION */
+
+.cnt-1020 {
+    max-width: 60rem;
+}
+
+.quote_image {
+    width: 4rem;
+    margin-bottom: 1rem;
+}
+
+.quote_paragraphe {
+    font-size: 2.2rem;
+}
+
+.signature {
+    font-size:2rem;
+    margin-right: 2rem;
+}
+
+/* HARMONIE VISION */
+
+    .cnt-1300 {
+        max-width: 95rem;
+    }
+
+    .wp_harmonie {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        gap: 1rem;
+    }
+
+    .img_harmonie {
+        max-width: 80rem;
+        margin-bottom: 1rem;
+    }
+
+    .img_piscine1 {
+        width: 100%;
+    }
+
+    .element_harmonie {
+        font-size: 2rem;
+        text-align: left;
+        width: 75%;
+        margin: 1rem auto;
+    }
+
+    .element_harmonie h3 {
+        font-size: 2.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .premierpara_harmonie {
+        width: auto;
+    }
+
+    .element_harmonie p {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .element_harmonie h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .harmonie_liste li {
+        font-size: 1.2rem; 
+        margin-bottom: 1rem;
+    }
+
+/* section imagevue */
+
+.cnt_1800 {
+    margin: 1rem auto;
+}
+
+.img_vue {
+    max-width: 75rem;
+    margin: 3rem auto;
+}
+
+/* ENVIRONMENTAL SECTION */
+
+    .cnt_environmental {
+        margin:  auto;
+        padding: 1rem 2rem;
+    }
+
+    .cnt-1300 {
+        max-width: 95rem;
+    }
+
+    .element_environmental {
+        width: auto;
+    }
+
+    .wp_environmental h2 {
+        font-size: 3rem;
+        width: 70%;
+        line-height: 4rem;
+        margin: 1rem auto
+    }
+
+    .wp_environmental p {
+        font-size: 1.8rem;
+        width: 55rem;
+        margin: 5rem auto;
+    } 
+    
+    .img_environmental {
+        flex-direction: row;
+    }
+
+    .coco_img {
+        max-width: 55%;
+    }
+
+    .bordmer_img {
+        max-width: 55%;
+    }
+
+/* NATURE SECTION */
+
+    .cnt-1310 {
+        margin: 4rem auto;
+    }
+
+    .wp_nature {
+        max-width: 75rem;
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+
+    .img_nature {
+        max-width: 60rem;
+        margin: auto;
+    }
+
+    .img_piscinebord {
+        width: 100%;
+        position: relative;
+        bottom: 2.5rem;
+        padding: 0;
+    }
+
+    .element_nature {
+        max-width: 75%;
+        margin: auto;
+    }
+    
+    .element_nature h2 {
+        margin-bottom: 0.5rem;
+        font-size: 2.8rem;
+    }
+
+    .element_nature p {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .premierpara_nature {
+        margin-bottom: 0.5rem;
+    }
+
+    .nature_liste h3 {
+        margin-bottom: 0.5rem;
+        font-size: 2.3rem;
+    }
+
+    .nature_liste li {
+        font-size: 1.2rem;
+    }
+
+     .section_nature::after {
+        bottom: 0;
+        left: 20%;
+        width: 60%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* RESOURCE SECTION */
+
+    .cnt-1430 {
+        max-width: 98rem;
+        margin-top: 8rem;
+    }
+
+    .wp_ressource {
+        flex-direction: column;
+        gap: 3rem;
+        margin-left: 0;
+        padding: 0;
+        margin: auto;
+    }
+
+    .img_ressource {
+        max-width: 80rem;
+        margin: auto;
+        margin-left: 13%;
+    }
+
+    .img_ressource {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .img_bateau {
+        width: 100%;
+    }
+
+    .ressource_element {
+        max-width: 73%;
+        margin:  1rem auto 6rem;
+    }
+
+    .ressource_element h3 {
+        font-size: 2.3rem;
+        margin-bottom: 0rem;
+    }
+
+    .ressource_element h2 {
+        font-size: 3rem;
+    }
+
+    .ressource_element li {
+        margin-top: 1rem;
+    }
+
+    .ressource_element p {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .section_ressource::after {
+        bottom: 0;
+        left: 20%;
+        width: 55%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* ENERGY SECTION */
+
+    .cnt_energy {
+        width: 100%;
+        margin: 5rem auto;
+    }
+
+    .cnt-1310 {
+        max-width: 90rem;
+    }
+
+    .wp_energy {
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .energy_liste {
+        margin: 2rem auto;
+    }
+
+    .element_energy {
+        max-width: 73%;
+    }
+
+    .img_piscine2 {
+        max-width: 80%;
+        margin: 1rem auto;
+        padding-left: 0;
+    }
+
+     .img_piscine2_e {
+        width: 100%;
+    }
+
+    .element_energy p {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .energy_liste li {
+        font-size: 1.2rem;
+    }
+
+/* HARMONIE COMMUNITY */
+
+    .section_harmoniecommunity {
+        margin-top: 1rem;
+    }
+
+    .cnt-1300 {
+        max-width: 80rem;
+    }
+
+    .element_harmoniecommunity {
+        width: 100%;
+    }
+
+    .wp_harmoniecommunity h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        width: 80%;
+        margin: auto;
+        line-height: 4rem;
+    }
+
+    .wp_harmoniecommunity p {
+        font-size: 1.9rem;
+        margin-top: 4rem;
+        max-width: 65rem;
+    }
+
+    .img_harmoniecommunity {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin: auto;
+        padding-bottom: 2rem;
+    }
+
+    .yatch_img {
+        width: 95%;
+    }
+
+    .couchesoleil_img {
+        width: 95%;
+    }
+
+/* CLIMATE HARMONIE */
+
+    .cnt-1810 {
+        max-width: 95rem;
+    }
+
+    .wp_cha {
+        margin: 4rem auto;   
+    }
+
+    .wp_cha h2 {
+        font-size: 2.5rem;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .wp_cha h3 {
+        margin-bottom: 0.5rem;
+        font-size: 1.8rem;
+        margin-left: 10%;
+    }
+
+    .element_climateharmonie {
+        margin: auto;
+        max-width: 76rem;
+    }
+
+    .element_climateharmonie p {
+        font-size: 1.8rem;
+        max-width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .img_climateharmonie {
+        flex-direction: column;
+        margin: 4rem auto;
+        width: 100%;
+        max-width: 80%;
+    }
+
+    .element_climateharmonie a {
+        padding: 1rem 2.5rem;
+        font-size: 1.8rem;
+        margin: auto;
+        margin-left: 9.5%;
+    }
+
+    .bordepiscinemer, .route, .bateauplonge {
+        width: 55rem;
+        margin: auto; 
+    }
+
+/* SIGNIFICANCE HARMONIE 2 */
+
+    .wp_sh_2 {
+        width: 65rem;
+        margin: auto;
+    }
+
+    .wp_sh_2 h2 {
+        font-size: 2.8rem;
+        width: 100%;
+        margin: auto;
+    }
+
+    .wp_sh_2 p {
+        font-size: 1.9rem;
+        width: 100%;
+    }
+
+    .wp_sh_2 a {
+        margin-bottom: 3rem;
+    }
+
+    .section_significanceharmonie_2::after {
+        bottom: -5rem;
+        left: 20%;
+        width: 55%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* RELATED NEWS */
+
+    .section_relatednews {
+        margin: 7.5rem auto;
+    }
+
+    .cnt_relatednews {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .cnt-1450 {
+        max-width: 100rem;
+    }
+
+    .wp1 {
+        margin: auto;
+    }
+
+    .wp1 h2 {
+        margin: 2rem 5rem;
+    }
+
+    .related_img {
+        flex-direction: column;
+        align-items: center;
+        margin: 3.5rem auto;
+        width: 82rem;
+        margin-left: 7%;
+    }
+
+    .related_img h3 {
+        margin: 1rem 0;
+        width: 82rem;
+        font-size: 2.5rem;
+    }
+
+    .related_img p {
+        width: 55rem;
+        font-size: 1.9rem;
+    }
+
+    .related_images1 {
+        width: 100%;
+    }
+
+    .related_images2 {
+        width: 100%;
+    }
+
+    .related_images3 {
+        width: 100%;
+    }
+
+    .image_mains {
+        width: 80%;
+    }
+
+    .image_mains_1 {
+        width: 80%;
+        height: auto;
+    }
+
+    .image_mains_2 {
+        width: 80%;
+        height: auto;
+    }
+
+/* FOOTER */
+
+    .cnt_footer {
+        max-width: 100%;
+    }
+
+    .wp_footer {
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .image_footer {
+        margin: auto;
+    }
+
+    .footer_logo {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .menu1_footer, .follow_us, .contact_us {
+        width: 80%;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .follow_us {
+        margin-bottom: 3rem;
+        
+    }
+    
+    .follow_us_menu {
+        gap: 1rem;
+        margin: auto;  
+        width: 24%;
+    }
+
+    .contact_us  {
+        max-width: 100%;
+        margin: auto;
+    }
+    
+    .linkden, .facebook, .insta {
+        width: 90%;
+        height: auto;
+    }
+
+
+                                /* MEDIA DEUXIEME PAGE 768-1023 */
+
+
+    /* HEADER */
+
+    .cnt_img {
+        margin: auto;
+        max-width: 32rem;
+    }
+
+    .burger_menu {
+        display: flex; 
+        position: absolute;
+        top: 3rem;
+        right: 3rem; 
+        flex-direction: column;
+        gap: 0.5rem;
+        cursor: pointer;
+        z-index: 1; 
+        width: 4rem; 
+        height: 2rem; 
+        justify-content: center; 
+    }
+
+    .burger_menu span {
+        width: 100%; 
+        height: 3px;
+        background: #000;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    /* Transformation en croix lorsque le menu est ouvert */
+
+    .burger_menu.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 8px; 
+    }
+
+    .burger_menu.active span:nth-child(2) {
+        opacity: 0; 
+    }
+
+    .burger_menu.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -8px; 
+    }
+
+    .nav-menu {
+        display: none; 
+        width: 100%;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        height: 100vh; 
+        background: #fff; 
+        z-index: 1;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        display: flex ; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .nav_menu_element {
+        flex-direction: column;
+        gap: 0.1rem;
+        font-size: 1.6rem;
+        width: 26rem;
+        padding: 1rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav_menu_element li {
+        width: 100%;
+    }
+
+    .nav_menu_element li a {
+        display: block;
+        padding: 1.5rem; 
+        color: #000; 
+        text-decoration: none;
+    }
+
+    .nav-menu.active .nav_menu_element::after {
+        display: none;
+    }
+
+    .nav-menu.active .separator {
+        display: none;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+        height: 100vh;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+/* SECTION VILLA_N */
+
+.wp_villaN {
+    gap: 5rem;
+    margin: 2rem auto;   
+}
+
+.box-left {
+    margin-left: 6rem;
+}
+
+.menu_section_villaN a:not(:last-child)::after {
+    content: ">";
+    margin: 1rem 0rem 1rem 1rem;
+    color: #333;
+}
+
+.elements_section_villaN {
+    width: 34rem;
+}
+
+.elements1_section_villaN {
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+
+.villaN_textes {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+
+.elements1_section_villaN h3 {
+    margin-top: 0rem;
+}
+
+.elements1_section_villaN p {
+    margin-bottom: 0rem;
+}
+
+.elements1_section_villaN::after {
+    top: 30rem;
+    width: 28rem;
+}
+
+.box-right {
+    width: 43rem;
+    margin-left: 1rem;
+}
+
+
+/* SECTION VIRTUAL TOUR */
+
+.wp_vtour {
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 0;
+    gap: 0.5rem;
+}
+
+.img1 {
+    max-width: 64rem;
+    margin: auto;
+}
+
+.img2_text {
+    margin: 4rem auto;
+}
+
+.img2_vtour {
+    width: 48.5rem;
+}
+
+.link_section_vtour a {
+    padding: 2rem 16.3rem;
+}
+
+
+/* SECTION GOLF VILLA */
+
+.section_golfvilla {
+    padding-top: 3rem;
+}
+
+.wp_golfvilla {
+    flex-direction: column;
+    margin: 0 1.5rem 0 1.5rem;
+    gap: 1rem;
+}
+
+.golfvilla_titre {
+    line-height: 3.9rem;
+    font-size: 3.8rem;
+}
+
+.golfvilla_paragraphe {
+    font-size: 2.1rem;
+    margin-top: 2.5rem;
+}
+
+.text_section_golfvilla {
+    margin: 4rem auto;
+}
+
+.cnt_img_section_golfvilla {
+    width: 61.5rem;
+    margin: auto;
+}
+
+/* SECTION DESCRIPITON VILLA N */
+
+.section_descvillan {
+    background-color: #777269;
+    margin: 5rem 0 0;
+}
+
+.wp_descvillan {
+    padding: 6rem 0rem 7rem;
+}
+
+.text_section_descvillan {
+    width: 62rem;
+}
+
+.descvillan_titre {
+    font-size: 4.5rem;
+}
+
+.descvillan_paragraphe {
+    margin: 4rem auto;
+    font-size: 2.2rem;
+}
+
+.img_section_descvillan {
+        display: flex;
+        gap: 1rem;
+        width: 76rem;
+}
+
+/* SECTION STYLE */
+
+.section_preferredstyle {
+    margin-bottom: 5rem;
+}
+
+.text_section_preferredstyle {
+    padding-top: 8rem;
+}
+
+.textes_section_preferredstyle {
+    flex-direction: column;
+    margin-top: 16rem;
+    margin-bottom: 7rem;
+    gap: 1rem;
+}
+
+.texte1 {
+    margin-top: 3rem;
+    position: relative;
+    font-size: 3.5rem;
+}
+
+.texte1::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 0.5px;
+    left: 0;
+    margin-top: 7rem;
+}
+
+.texte2 {
+   margin: 3rem auto;
+}
+
+.texet2_titre {
+    margin-top: 1rem;
+    font-size: 3.5rem;
+}
+
+.texte3 {
+    margin-top: 3rem;
+    position: relative;
+    font-size: 3.5rem;
+}
+
+.texte3::before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 1.5px;
+    left: 0;
+    bottom: 6rem;
+}
+
+.section_preferredstyle::before {
+  left: 29%;
+  display: none;
+}
+
+.section_preferredstyle::after {
+  left: 72%;
+  display: none;
+}
+
+/* SECTION WHYBUY */
+
+.wp_whybuy {
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+    margin: 5rem 4rem;
+}
+
+.titre_whybuy {
+    font-size: 4.2rem;
+    max-width: 70rem;
+    line-height: 4rem;
+}
+
+.paragraphe1_whybuy {
+        font-size: 2.2rem;
+}
+
+.paragraphe2_whybuy, .paragraphe3_whybuy {
+    margin-bottom: 1.5rem;
+    font-size: 1.9rem;
+}
+
+.wp_whybuy::after {
+    width: 52rem;
+    left: 6rem;
+    top: 61rem;
+}
+
+/* SECTION ADVANTAGES */
+
+.wp_advantages {
+    margin: 1rem auto;
+}
+
+.textes_advantages {
+    width: 67rem;
+    margin: 7rem 3rem 3rem 4rem;
+}
+
+.titre_advantages {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    width: 80rem;
+}
+
+.paragraphe_advantages {
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.img_advantages {
+    flex-direction: column;
+    max-width: 60rem;
+    margin-top: 5rem;
+}
+
+/* SECTION CONTACT (TEXTES) */
+
+.section_contact {
+    margin-top: 6rem;
+}
+
+.wp_contact {
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+.textes_contact {
+    color: white;
+    margin: 5rem auto;
+}
+
+/* SECTION CONTACT (FORM) */
+
+.contact_form {
+  width: 30rem; 
+  margin: 5rem 1rem 3rem 3rem;
+}
+
+.noms_contact {
+    display: flex;
+    margin: 1rem 2rem auto;
+}
+
+.noms_contact input {
+    width: 31rem;
+}
+
+.email {
+    margin: 5rem 2rem auto 1rem;
+}
+
+.email input {
+    width: 67rem;
+    margin: 2rem 2rem auto 1rem;
+}
+
+.country_phone {
+    display: flex;
+    gap: 5rem;
+    margin: 5rem 1rem 1rem 2rem;
+}
+
+.country_phone input {
+    width: 31rem;
+}
+
+.message {
+    margin: 5rem 2rem auto 1rem;
+}
+
+.message_titre {
+    margin-left: 1rem;
+}
+
+.message input {
+    width: 67rem;
+    margin: 2rem 2rem auto 1rem;
+}
+
+.submit_btn a {
+    margin-left: 2rem;
+}
+
+.checkbox_liste {
+    display: flex;
+    margin-left: 2rem;
+    gap: 10rem;
+    width: 6rem;
+}
+
+.texte_check {
+    color: white;
+    font-size: 1.6rem;
+    width: 6rem;
+}
+
+/* SECTION MORE VILLAS */
+
+.wp_morevillas {
+    margin: 7rem auto;
+}
+
+.titre_morevillas {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+.img_morevillas {
+    gap: 1rem;
+}
+
+.cnt_img_morevillas {
+    width: 37rem;
+    margin: auto;
+}
+
+.texte_morevillas {
+    bottom: 5rem;         
+    left: 2rem;           
+    font-size: 2.5rem;
+}
+
+/* FOOTER */
+
+.wp_footer {
+    gap: 3rem; 
+}    
+
+}
+
+/* entre 1024px et 1183px */
+@media screen and (min-width: 1024px) and (max-width: 1183px) {
+
+
+
+                            /* MEDIA PREMIERE PAGE 1024-1183*/
+
+
+/* HEADER */
+
+    .cnt_header {
+        width: 100%;
+        padding: 0 1rem;
+        margin: auto;
+    }
+
+    .image_header {
+        width: 45.2rem;
+        margin: auto;
+    }
+
+    .header_logo {
+        width: 60rem;
+        margin: auto;
+    }
+
+    .header_menu_element {
+        max-width: 100%;
+        margin: 3rem auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.8rem;
+        font-size: 1.2rem;
+    }
+
+    .header_menu_element li a {
+        font-size: 1.3rem;
+    }
+
+    .header_menu_element::after {
+        max-width: 105%;
+    }
+
+/* SECTION INTRO */
+
+    .wp_intro {
+        max-width: 90rem;
+        margin: 6.5rem auto;
+    }
+
+    .intro_menu {
+        margin: auto;
+        font-size: 1.3rem;
+    }
+
+    .intro_titre {
+        max-width: 75.0rem;
+        font-size: 4.5rem;
+        line-height: 5rem;
+        margin: 2.5rem auto;
+    }
+
+    .intro_menu1 {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .intro_paragraphe {
+        font-size: 1.7rem;
+        max-width: 80rem;
+        margin: 6rem auto 1rem auto;
+    }
+
+    .wp_img_principale {
+        max-width: 95%;
+        margin: -3rem auto;
+    }
+
+    .intro_img {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+    }
+
+/* SIGNIFICANCE HARMONIE */
+
+    .cnt-1300 {
+         max-width: 90.0rem;
+    }
+
+    .wp_sh {
+        font-size: 1.4rem;
+        margin: 10rem auto;
+    }
+
+    .wp_sh h2 {
+        width: 100%;
+        margin: auto;
+        font-size: 3rem;
+    }
+
+    .wp_sh p {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .wp_sh a {
+        font-size: 1.4rem;
+        transition: background-color 0.3s ease;
+        max-width: 19%;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+
+
+/* QUOTE SECTION */
+
+.cnt-1020 {
+    max-width: 70rem;
+}
+
+.wp_quote {
+    width: 100%;
+}
+
+.quote_paragraphe {
+    font-size: 2.4rem;
+    font-style: italic;
+}
+
+.signature {
+    font-size:2rem;
+    margin-top: 2rem;
+    display: block;
+    text-align: right;
+    margin-right: 4rem;
+}
+
+
+/* HARMONIE VISION */
+
+    .cnt-1300 {
+        max-width: 70rem;
+    }
+
+    .wp_harmonie {
+        margin: 8rem auto;
+        align-items: center;
+    }
+
+    .img_harmonie {
+        width: 40rem;
+        height: auto;
+    }
+
+    .img_piscine1 {
+        width: 100%;
+        margin-bottom: 20rem;
+    }
+
+    .element_harmonie, .premierpara_harmonie  {
+        width: 45rem;
+    }
+
+    .element_harmonie h3 {
+        font-size: 2.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .element_harmonie p {
+        margin-bottom: 1rem;
+    }
+
+    .harmonie_liste li {
+        margin-bottom: 0.5rem;
+    }
+    
+
+/* section imagevue */
+
+.cnt-1800 {
+    max-width: 95rem;
+}
+
+.img_vue {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+/* ENVIRONMENTAL SECTION */
+
+    .section_environmental {
+        padding-top: 2rem;
+    }
+
+    .wp_environmental h2 {
+        font-size: 3rem;
+        max-width: 43rem;
+        line-height: 4rem;
+    }
+
+    .wp_environmental p {
+        font-size: 1.5rem;
+        margin: 3rem auto;
+        width: 74rem;
+    } 
+    
+    .element_environmental {
+        max-width: 80%;
+    }
+
+    .img_environmental {
+        flex-direction: row;
+        align-items: center;
+        max-width: 45rem;
+        margin: auto;
+    }
+
+    .coco_img {
+        width: 100%;
+    }
+
+    .bordmer_img {
+        width: 100%;
+    }
+
+/* NATURE SECTION */
+
+    .cnt-1310 {
+        width: 106rem;
+    }
+
+    .wp_nature {
+        width: 88rem;
+        flex-direction: row;
+        margin: 8rem auto;
+    }
+
+    .element_nature {
+        width: 43rem;
+    }
+
+    .element_nature h2 {
+        margin-bottom: 0.4rem;
+    }
+
+    .img_piscinebord {
+        width: 46rem;
+        padding-left: 6rem;
+    }
+    
+    .element_nature p {
+        font-size: 1.6rem;
+    }
+
+    .nature_liste li {
+        font-size: 1.2rem;
+    }
+
+    .nature_liste p {
+        margin-bottom: 0.8rem;
+    }
+
+    .nature_liste h3 {
+        margin-bottom: 0.3rem;
+    }
+
+     .section_nature::after {
+        left: 20rem;
+        width: 60rem;
+    }
+
+
+/* RESOURCE SECTION */
+
+    .cnt-1430 {
+        max-width: 100rem;
+    }
+
+    .wp_ressource {
+        max-width: 100%;
+        gap: 6rem;
+        margin: auto;
+    }
+
+    .img_ressource {
+        max-width: 35rem;
+        margin-top: 2rem;
+    }
+
+    .img_bateau {
+        width: 100%;
+    }
+
+    .ressource_element {
+        width: 47rem;
+        margin: auto;
+    }
+
+    .ressource_element h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .ressource_element h3 {
+        margin-bottom: 0.4rem;
+    }
+
+    .ressource_element p {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .ressource_element li {
+        margin-top: 1rem;
+    }
+
+    .section_ressource::after {
+        left: 20rem;
+        width: 60rem;
+    }
+
+/* ENERGY SECTION */
+
+    .wp_energy {
+        width: 80rem;
+        margin: 10rem auto;
+    }
+
+    .img_piscine2 {
+        width: 40rem;
+    }
+
+    .img_piscine2_e {
+        width: 100%;
+    }
+
+    .element_energy {
+       width: 37rem;
+    }
+
+    .element_energy h2 {
+        margin-bottom: 0.5rem;
+        margin-left: 0;
+    }
+
+    .element_energy h3 {
+       margin-bottom: 0.5rem;
+    }
+    
+    .element_energy p {
+        font-size: 1.6rem;
+    }
+
+    .energy_liste {
+        margin: 1rem auto;
+    }
+
+    .energy_liste li {
+        font-size: 1.2rem;
+    }
+
+/* HARMONIE COMMUNITY */
+
+    .cnt-1300 {
+        max-width: 106rem;
+    }
+
+    .wp_harmoniecommunity {
+        width: 100%;
+        display: flex;
+    }
+
+    .element_harmoniecommunity {
+        width: 80rem;
+    }
+
+    .wp_harmoniecommunity h2 {
+        font-size: 3rem;
+        max-width: 43rem;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+        margin: auto;
+        text-align: center;
+    }
+
+    .wp_harmoniecommunity p {
+        font-size: 1.5rem;
+        margin: 4rem auto;
+        width: 74rem;
+    }
+
+    .img_harmoniecommunity {
+        flex-direction: row;
+        max-width: 45rem;
+        margin: auto;
+    }
+
+    .yatch_img {
+        width: 100%;
+    }
+
+    .couchesoleil_img {
+        width: 100%;
+    }
+
+
+/* CLIMATE HARMONIE */
+
+    .cnt-1810 {
+        max-width: 98rem;
+    }
+
+    .wp_cha {
+        font-size: 1.4rem;
+        margin: 5rem 1rem auto;
+    }
+
+    .wp_cha h2 {
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+    }
+    
+    .wp_cha h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .wp_cha p {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .img_climateharmonie {
+        flex-direction: row;
+        margin: 7rem auto;
+        width: 90%;
+    }
+
+    .element_climateharmonie a {
+        width: 29%;
+        font-size: 1.4rem;
+    }
+   
+    .bordepiscinemer, .route, .bateauplonge {
+        width: 30rem;
+        margin: auto;
+    }
+
+/* SIGNIFICANCE HARMONIE 2 */
+
+    .cnt-1300 {
+        max-width: 90rem;
+    }
+
+    .wp_sh_2 {
+        font-size: 1.4rem;
+    }
+
+    .wp_sh_2 h2 {
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+    }
+
+    .wp_sh_2 p {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .wp_sh_2 a {
+        display: inline-block;
+        background-color: #E6DDCB;
+        text-decoration: none;
+        color: #333;
+        padding: 1.3rem 4rem;
+        font-size: 1.5rem;
+        transition: background-color 0.3s ease;
+        width: 16rem;
+        margin-top: 3rem;
+        margin-bottom: 10rem;
+    }
+
+    .section_significanceharmonie_2::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 1rem;
+        left: 20%;
+        width: 55%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* RELATED NEWS */
+
+    .section_relatednews {
+        margin: 7rem auto;
+    }
+
+    .wp_relatednews {
+        max-width: 90rem;
+    }
+
+    .related_img {
+        gap: 1rem;
+        width: 30rem;
+    }
+
+    .related_img h3 {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+        width: 26rem;
+    }
+
+    .related_img p {
+        width: 94%;
+        font-size: 1.5rem
+    }
+
+    .image_mains {
+        width: 30rem;
+    }
+
+    .image_mains_1 {
+        width: 30rem;
+    }
+
+    .image_mains_2 {
+        width: 30rem;
+    }
+
+/* FOOTER */
+
+    .cnt_footer {
+        max-width: 100%;
+    }
+
+    .wp_footer {
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        gap: 6%;
+    }
+
+    .image_footer {
+        margin: auto;
+    }
+
+    .footer_logo {
+        width: 20rem;
+        margin-bottom: 14rem;
+    }
+
+    .menu1_footer {
+        margin-bottom: auto;
+        width: 100%;
+    }
+
+    .follow_us {
+        margin-bottom: auto;
+        width: 100%;
+    }
+    
+    .follow_us_menu {
+        gap: 1rem;
+        margin: auto;
+    }
+
+    .contact_us  {
+        width: 100%;
+        font-size: 1.3rem;
+        margin-bottom: auto;
+    }
+
+    .contact_us h2,
+    .follow_us h2 {
+        font-size: 2rem;
+    }
+    
+    .linkden, .facebook, .insta {
+        width: 3rem;
+        height: auto;
+    }
+
+
+                                        /* MEDIA DEUXIEME PAGE 1024-1183 */
+
+
+/* HEADER */
+
+.wp_header {
+    gap: 0rem;
+}
+
+.cnt_img {
+    width: 38rem;
+    margin: 2rem auto;
+}
+
+.nav_menu_element {
+    margin: 5rem auto;
+    gap: 1.5rem;
+}
+
+.nav_menu_element a {
+    font-size: 1.5rem;
+}
+
+.nav_menu_element::after {
+    width: 99rem;
+    background-color: #8b8b8b;
+}
+
+/* SECTION VILLA_N */
+
+.wp_villaN {
+    margin: 1rem auto;
+}
+
+.box-left {
+    margin-left: 4rem;
+}
+
+.menu_section_villaN a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.elements1_section_villaN {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+.elements1_section_villaN h3 {
+    margin-top: 0rem;
+    margin-bottom: 0.1rem;
+}
+
+.elements1_section_villaN p {
+    margin-bottom: 0rem;
+}
+
+.elements1_section_villaN::after {
+    top: 36rem;
+    width: 35rem;
+}
+
+.btn_learnmore {
+    margin-top: 1rem;
+}
+
+.box-right {
+    width: 34rem;
+    margin-left: 6rem;
+}
+
+/* SECTION VIRTUAL TOUR */
+
+.wp_vtour {
+    margin: 1rem 1rem 1rem 1rem;
+    gap: 1rem;
+}
+
+.img1 {
+    max-width: 64.2rem;
+}
+
+.img2_text {
+    margin-top: 5.7rem;
+    margin-left: 2rem;
+}
+
+.link_section_vtour a {
+    padding: 2rem 6.9rem;
+}
+
+/* SECTION GOLF VILLA */
+
+.section_golfvilla {
+    padding-top: 1rem;
+}
+
+.cnt_1535 {
+    margin-top: 1rem;
+}
+
+.wp_golfvilla {
+    margin: 8rem 1rem 1rem 2rem;
+    gap: 4rem;
+}
+
+.text_section_golfvilla {
+    max-width: 49rem;
+    margin-top: 0;
+}
+
+.golfvilla_titre {
+    font-size: 3.1rem;
+    line-height: 4rem;
+}
+
+.golfvilla_paragraphe {
+    margin-top: 1rem;
+}
+
+.cnt_img_section_golfvilla {
+    max-width: 44rem;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+}
+
+/* SECTION DESCRIPITON VILLA N */
+
+.descvillan_paragraphe  {
+    width: 62rem;
+}
+
+/* SECTION STYLE */
+
+.text_section_preferredstyle h3 {
+    font-size: 3rem;
+}
+
+.textes_section_preferredstyle {
+    gap: 0;
+}
+
+.texte1 {
+    margin-top: 38rem;
+}
+
+.texte2 {
+     max-width: 42rem;
+}
+
+.texte3 {
+     margin-top: 38rem;
+}
+
+/* SECTION WHYBUY */
+
+.wp_whybuy {
+    gap: 7rem;
+    width: 80rem;
+    margin: 3rem 11rem;
+}
+
+.titre_whybuy {
+    font-size: 3.5rem;
+    line-height: 4.4rem;
+    width: 26rem;
+}
+
+.paragraphe_whybuy {
+    max-width: 47rem;
+}
+
+.wp_whybuy::after {
+    width: 75rem;
+    top: 65rem;
+}
+
+/* SECTION ADVANTAGES */
+
+.wp_advantages {
+    margin: 10rem auto;
+}
+
+.textes_advantages {
+    max-width: 74rem;
+    margin: auto;
+}
+
+.titre_advantages {
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
+.img_advantages {
+    max-width: 33rem;
+}
+
+/* SECTION CONTACT (TEXTES) */
+
+.textes_contact {
+    margin: 10rem 0 10rem 6rem;
+}
+
+
+/* SECTION CONTACT (FORM) */
+
+.contact_form {
+    max-width: 69rem;
+}
+
+.noms_contact {
+    margin: 10rem 10rem auto;
+}
+
+.noms_contact input {
+    width: 26rem;
+}
+
+.email input {
+    width: 57rem;
+}
+
+.country_phone {
+    display: flex;
+    gap: 5rem;
+    margin: 5rem 10rem auto;
+}
+
+.country_phone input {
+    width: 26rem;
+}
+
+.message input {
+    width: 57rem;
+}
+
+
+/* SECTION MORE VILLAS */
+
+.wp_morevillas {
+    margin: 10rem auto;
+}
+
+.img_morevillas {
+    gap: 1rem;
+    max-width: 100rem;
+    margin: auto;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+
+.wp_footer {
+    gap: 4rem;
+    display: flex;
+}
+
+.footer_logo {
+    width: 25rem;
+}
+
+.menu1_footer, .follow_us, .contact_us {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.menu1_footer a {
+    font-size: 1.6rem;
+}
+
+.follow_us_menu {
+        justify-content: center;
+    }
+}
+
+/* entre 1184px et 1399px */
+@media screen and (min-width: 1184px) and (max-width: 1399px) {
+
+
+
+                            /* MEDIA PREMIERE PAGE 1184-1399 */
+
+
+/* HEADER */
+
+    .cnt_header {
+        width: 100%;
+        padding: 0 1rem;
+        margin: auto;
+    }
+
+    .cnt_wp {
+        width: 45.2rem;
+        margin: auto;
+    }
+
+    .header_logo {
+        width: 90%;
+    }
+
+    .header_menu_element {
+        max-width: 118.4rem;
+        width: 100%;
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        font-size: 0.5rem;
+    }
+
+    .header_menu_element::after {
+        width: 105%;
+        max-width: 105%;
+    }
+
+/* SECTION INTRO */
+
+    .cnt-1810 {
+        max-width: 135rem;
+    }
+
+    .img_intro {
+        width: 100%;
+    }
+
+    .intro_menu {
+        max-width: 100%;
+    }
+
+    .intro_titre {
+        max-width: 75.0rem;
+        font-size: 4.5rem;
+        line-height: 5rem;
+        margin: 2.5rem auto;
+    }
+
+    .intro_menu1 {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .intro_paragraphe {
+        font-size: 1.8rem;
+        max-width: 90rem;
+        margin: 6rem auto;
+    }
+
+    .wp_img_principale {
+        max-width: 95%;
+        margin: -3rem auto;
+    }
+   
+
+
+/* SIGNIFICANCE HARMONIE */
+
+    .cnt-1300 {
+        max-width: 100rem;
+        margin: auto;
+    }
+
+    .wp_sh {
+        font-size: 1.8rem;
+        margin: 10rem auto;
+        width: 90rem;
+    }
+
+    .wp_sh h2 {
+        margin: auto;
+        font-size: 2.5rem;  
+    }
+
+    .wp_sh p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        max-width: 90rem;
+    }
+
+    .wp_sh a {
+        max-width: 19%;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+/* QUOTE SECTION */
+
+.cnt-1200 {
+    max-width: 70rem;
+    margin: 3rem auto;
+}
+
+.wp_quote {
+    width: 100%;
+}
+
+.quote_paragraphe {
+    font-size: 2.4rem;
+}
+
+.signature {
+    font-size:2rem;
+    margin-top: 2rem;
+}
+
+/* HARMONIE VISION */
+
+    .cnt-1300 {
+        max-width: 90rem;
+    }
+
+    .wp_harmonie {
+        margin: 8rem auto;
+        align-items: center;
+        width: 90.2rem;
+    }
+
+    .img_harmonie {
+        max-width: 50rem;
+        height: auto;
+    }
+
+    .img_piscine1 {
+        width: 100%;
+        margin-bottom: 44rem;
+    }
+
+    .element_harmonie  {
+        max-width: 44rem;
+    }
+    
+    .premierpara_harmonie  {
+        width: 48rem;
+    }
+
+    .element_harmonie h3 {
+        font-size: 2.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .element_harmonie p {
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+    }
+
+    .harmonie_liste li {
+        margin-bottom: 0.5rem;
+    }
+    
+
+/* section imagevue */
+
+.cnt-1800 {
+    max-width: 95%;
+}
+
+.wp_imagevue {
+    width: 100%;
+}
+
+.img_vue {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+/* ENVIRONMENTAL SECTION */
+
+    .section_environmental {
+        padding-top: 3rem;
+    }
+
+    .cnt-1300 {
+        max-width: 106rem;
+    }
+
+    .wp_environmental h2 {
+        font-size: 3.5rem;
+        max-width: 50rem;
+        line-height: 5rem;
+        margin-bottom: 1rem
+    }
+
+    .wp_environmental p {
+        font-size: 1.8rem;
+        margin: 4rem auto;
+        max-width: 48rem;
+    } 
+
+    .element_environmental {
+        width: 47.5rem;
+        margin: auto;
+    }
+
+    .img_environmental {
+        flex-direction: row;
+        align-items: center;
+        max-width: 45rem;
+        margin: auto;
+    }
+
+    .coco_img {
+        width: 100%;
+    }
+
+    .bordmer_img {
+        width: 100%;
+    }
+
+/* NATURE SECTION */
+
+    .cnt-1310 {
+        width: 106rem;
+    }
+
+    .wp_nature {
+        width: 91rem;
+        margin: 8rem auto;
+    }
+
+    .element_nature {
+        width: 43rem;
+    }
+
+    .img_piscinebord {
+        width: 46rem;
+        padding-left: 6rem;
+    }
+    
+    .element_nature p {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .nature_liste {
+        margin: 2rem auto 2rem 2rem;
+    }
+
+    .nature_liste li {
+        font-size: 1.2rem;
+    }
+
+     .section_nature::after {
+        left: 23%;
+        width: 55%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* RESOURCE SECTION */
+
+    .cnt-1430 {
+        max-width: 111rem;
+    }
+
+    .wp_ressource {
+        width: 117.2rem;
+        gap: 7rem;
+    }
+
+    .img_bateau {
+      width: 40rem;
+      margin-top: 1.5rem;
+    }
+
+    .ressource_element {
+        max-width: 50rem;
+    }
+
+    .ressource_element p {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .ressource_element li {
+        margin-top: 1rem;
+    }
+
+    .section_ressource::after {
+        left: 23%;
+        width: 55%;
+        height: 1px; 
+        background-color: black;
+    }
+
+
+/* ENERGY SECTION */
+
+    .section_energy {
+        margin: 1rem auto;
+    }
+
+    .cnt-1310 {
+        max-width: 115rem;
+    }
+
+    .wp_energy {
+        width: 100%;
+        margin: 10rem auto;
+    }
+
+    .img_piscine2 {
+        width: 47rem;
+    }
+
+    .img_piscine2_e {
+        width: 42rem; 
+    }
+
+    .element_energy {
+       width: 37rem;
+    }
+
+    .element_energy h2 {
+        margin-bottom: 0.5rem;
+        margin-left: 0;
+        font-size: 2.8rem;
+    }
+    
+    .element_energy p {
+        font-size: 1.7rem;
+    }
+
+    .energy_liste {
+        margin: 1rem auto;
+    }
+
+    .energy_liste li {
+        font-size: 1.2rem;
+    }
+
+/* HARMONIE COMMUNITY */
+
+    .section_harmoniecommunity {
+        margin-top: 1rem;
+    }
+
+    .cnt_1300 {
+        max-width: 106rem;
+    }
+
+    .wp_harmoniecommunity {
+        display: flex;
+        padding: 0;
+        width: 66.2rem;
+    }
+
+    .element_harmoniecommunity {
+        width: 69rem;
+    }
+
+    .wp_harmoniecommunity h2 {
+        max-width: 45rem;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+        margin: auto;
+        font-size: 2.9rem;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    .wp_harmoniecommunity p {
+        font-size: 1.8rem;
+        margin: 4rem auto;
+        max-width: 54rem;
+    }
+
+     .img_harmoniecommunity {
+        flex-direction: row;
+        align-items: center;
+        max-width: 45rem;
+        margin: auto;
+    }
+
+    .yatch_img {
+        width: 100%;
+    }
+    .couchesoleil_img {
+        width: 100%;
+    }
+
+
+/* CLIMATE HARMONIE */
+
+    .cnt-1810 {
+        max-width: 98rem;
+    }
+
+    .wp_cha {
+        font-size: 1.8rem;
+        margin: 6rem 2rem auto;
+        width: 90.2rem;
+    }
+
+    .wp_cha h2 {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+    }
+    
+    .wp_cha h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .wp_cha p {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .img_climateharmonie {
+        flex-direction: row;
+        margin: 7rem auto;
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .element_climateharmonie a {
+        width: 25%;
+        padding: 1rem 2.5rem;
+        font-size: 1.4rem;
+    }
+   
+    .bordepiscinemer, .route, .bateauplonge {
+        width: 35rem;
+        margin: auto;
+    }
+
+/* SIGNIFICANCE HARMONIE 2 */
+
+    .cnt-1300 {
+        max-width: 90rem;
+    }
+
+    .wp_sh_2 {
+        margin: auto;
+        font-size: 1.4rem;
+        width: 90rem;
+    }
+
+    .wp_sh_2 h2 {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-size: 2.9rem;
+    }
+
+    .wp_sh_2 p {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .wp_sh_2 a {
+        margin-bottom: 10rem;
+    }
+
+    .section_significanceharmonie_2::after {
+        bottom: 1rem;
+        left: 20%;
+        width: 55%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* RELATED NEWS */
+
+    .section_relatednews {
+        margin: 5rem auto;
+    }
+
+    .cnt_wp {
+        width: 106.2rem;
+        margin: auto;
+    }
+
+    .wp_relatednews {
+        max-width: 104rem;
+    }
+
+    .related_img {
+        gap: 1rem;
+        width: 36rem;
+    }
+
+    .related_img h3 {
+        width: 26rem;
+    }
+
+    .related_img p {
+        width: 94%;
+        font-size: 1.7rem
+    }
+
+    .related_images1 {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .related_images2 {
+        width: 100%;
+    }
+
+    .related_images3 {
+        width: 100%;
+    }
+
+    .image_mains {
+        width: 36rem;
+    }
+
+    .image_mains_1 {
+        width: 36rem;
+    }
+
+    .image_mains_2 {
+        width: 36rem;
+    }
+
+/* FOOTER */
+
+    .cnt_footer {
+        max-width: 100%;
+    }
+
+    .wp_footer {
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        gap: 6%;
+    }
+
+    .image_footer {
+        margin: auto;
+    }
+
+    .footer_logo {
+        width: 20rem;
+        margin-bottom: 14rem;
+    }
+
+    .menu1_footer {
+        max-width: 100%;
+        margin-bottom: auto;
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .follow_us {
+        margin-bottom: auto;
+        width: 100%;
+    }
+    
+    .follow_us_menu {
+        gap: 1rem;
+        margin: auto;
+    }
+
+    .contact_us  {
+        max-width: 100%;
+        width: 100%;
+        font-size: 1.3rem;
+        margin-bottom: auto;
+    }
+
+    .contact_us h2,
+    .follow_us h2 {
+        font-size: 2rem;
+    }
+    
+    .linkden, .facebook, .insta {
+        width: 3rem;
+        height: auto;
+    }
+
+
+                 /* MEDIA DEUXIEME PAGE 1184-1399 */
+
+
+
+/* HEADER */
+
+.cnt_img {
+    width: 35rem;
+    margin: auto;
+}
+
+.nav_menu_element {
+    gap: 2.6rem;
+}
+
+.nav_menu_element a {
+    font-size: 1.5rem;
+}
+
+.nav_menu_element::after {
+    width: 113rem;
+}
+
+/* SECTION VILLA_N */
+
+.section_villaN {
+    padding: 7rem 0;
+}
+
+.wp_section_villaN {
+    gap: 5rem;
+    margin: 5rem auto;
+}
+
+.box-left {
+    margin-left: 7rem;
+}
+
+.box-right {
+    width: 40rem;
+    margin-left: 5rem;
+}
+
+
+.elements1_section_villaN {
+    gap: 4rem;
+}
+
+.elements1_section_villaN::after {
+    top: 23rem;
+    width: 55rem;
+}
+
+.villaN_textes {
+    margin-bottom: 1rem;
+}
+
+.btn_learnmore {
+    margin-top: 2.5rem;
+}
+
+.elements1_section_villaN h3 {
+    margin-top: 2rem;
+}
+
+
+/* SECTION VIRTUAL TOUR */
+
+.wp_vtour {
+    margin: 2rem 1rem 2rem 7rem;
+    gap: 1rem;
+}
+
+.img1 {
+    max-width: 54.2rem;
+}
+
+.img2_text {
+    margin-top: 5.3rem;
+    width: 27rem;
+    margin-left: 3rem;
+}
+
+.link_section_vtour {
+    margin-bottom: 3rem;
+}
+
+.link_section_vtour a {
+    padding: 2rem 5.6rem;
+}
+
+
+/* SECTION GOLF VILLA */
+
+.section_golfvilla {
+    padding-top: 1rem;
+}
+
+.cnt_1535 {
+    margin-top: 1rem;
+}
+
+.wp_golfvilla {
+    gap: 0rem;
+    margin: 8rem 1rem 1rem 5rem;
+}
+
+.text_section_golfvilla {
+    max-width: 55rem;
+    margin-top: 0rem;
+}
+
+.golfvilla_titre {
+    font-size: 3.5rem;
+}
+
+.golfvilla_paragraphe {
+    margin-top: 1rem;
+}
+
+.cnt_img_section_golfvilla {
+    max-width: 46rem;
+    margin-top: 2rem;
+}
+
+
+/* SECTION DESCRIPTION VILLA N */
+
+.descvillan_paragraphe  {
+    max-width: 63rem;
+}
+
+/* SECTION STYLE */
+
+.text_section_preferredstyle h3 {
+    font-size: 3.3rem;
+}
+
+.textes_section_preferredstyle {
+    gap: 0rem;
+}
+
+.texte2 {
+    max-width: 46rem;
+    margin: auto;
+}
+
+.texte1 {
+    margin-top: 37rem;
+}
+
+.texte3 {
+    margin-top: 37rem;
+}
+
+/* SECTION WHYBUY */
+
+.wp_whybuy {
+    gap: 4rem;
+    margin: 0;
+}
+
+.titre_whybuy {
+    width: 26rem;
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+
+.paragraphe_whybuy {
+    max-width: 65rem;
+}
+
+.wp_whybuy::after {
+    width: 98rem;
+    top: 48rem;
+}
+
+/* SECTION ADVANTAGES */
+
+.wp_advantages {
+    margin: 10rem auto;
+}
+
+.textes_advantages {
+    max-width: 97rem;
+    margin: auto;
+}
+
+.img_advantages {
+    max-width: 34rem;
+}
+
+/* SECTION CONTACT (TEXTES) */
+
+.textes_contact {
+    margin: 10rem 0 10rem 9rem;
+}
+
+
+/* SECTION CONTACT (FORM) */
+
+.contact_form {
+ max-width: 78rem;
+}
+
+.noms_contact input {
+    width: 29rem;
+}
+
+.email input {
+    width: 63rem;
+}
+
+.country_phone input {
+    width: 29rem;
+}
+
+.message input {
+    width: 63rem;
+}
+
+
+/* SECTION MORE VILLAS */
+
+.wp_morevillas {
+    margin: 6rem auto;
+}
+
+.img_morevillas {
+    gap: 2rem;
+    width: 108rem;
+    margin: auto;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+
+.wp_footer {
+    gap: 6rem;
+}
+
+.footer_logo {
+    width: 27rem;
+}
+
+}
+                            
+/* entre 1400px et 1719px */
+@media screen and (min-width: 1400px) and (max-width: 1719px) { 
+
+
+                /* PREMIERE PAGE ENTRE 1400PX ET 1719PX */
+
+
+
+/* HEADER */
+
+    .container_header {
+        width: 80%;
+        padding: 0 1rem;
+        margin: auto;
+    }
+
+    .image_header {
+        width: 40.2rem;
+        margin: auto;
+    }
+
+    .header_logo {
+        width: 90%;
+    }
+
+    .header_menu_element {
+        max-width: 118.4rem;
+        width: 100%;
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.7rem;
+        font-size: 0.5rem;
+    }
+
+    .header_menu_element::after {
+        width: 105%;
+        max-width: 105%;
+    }
+
+/* SECTION INTRO */
+
+    .cnt-1810 {
+        max-width: 135rem;
+    }
+
+    .img_intro {
+        width: 100%;
+    }
+
+    .intro_menu {
+        max-width: 100%;
+        margin: auto;
+        font-size: 1.3rem;
+    }
+
+    .intro_titre {
+        max-width: 75.0rem;
+        font-size: 4.5rem;
+        line-height: 5rem;
+        margin: 2.5rem auto;
+    }
+
+    .intro_menu1 {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .intro_paragraphe {
+        font-size: 1.6rem;
+        max-width: 90rem;
+        margin: 6rem auto;
+    }
+
+    .wp_img_principale {
+        max-width: 95%;
+        margin: -3rem auto;
+    }
+
+    
+
+
+/* SIGNIFICANCE HARMONIE */
+
+    .cnt-1300 {
+        max-width: 95rem;
+    }
+
+    .wp_sh {
+        font-size: 1.4rem;
+        margin: 10rem auto;
+    }
+
+    .wp_sh h2 {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+    }
+
+    .wp_sh p {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .wp_sh a {
+        max-width: 19%;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+/* QUOTE SECTION */
+
+.cnt-1020 {
+    max-width: 85rem;
+}
+
+.quote_paragraphe {
+    font-size: 2.4rem;
+}
+
+.signature {
+    font-size:2rem;
+    margin-top: 2rem;
+}
+
+/* HARMONIE VISION */
+
+    .cnt-1306 {
+        max-width: 110rem;
+        margin: auto;
+    }
+
+    .wp_harmonie {
+        margin: 8rem auto;
+        align-items: center;
+    }
+
+    .img_harmonie {
+        max-width: 51rem;
+        height: auto;
+    }
+
+    .img_piscine1 {
+        width: 100%;
+        margin-bottom: 9rem;
+    }
+
+    .element_harmonie  {
+        max-width: 50rem;
+    }
+
+    .premierpara_harmonie  {
+        width: 48rem;
+    }
+
+    .element_harmonie h3 {
+        font-size: 2.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .element_harmonie p {
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .harmonie_liste li {
+        margin-bottom: 0.5rem;
+    }
+    
+
+/* section imagevue */
+
+.cnt-1800 {
+    max-width: 95%;
+}
+.wp_imagevue {
+    width: 100%;
+}
+
+.img_vue {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+/* ENVIRONMENTAL SECTION */
+
+    .section_environmental {
+        padding-top: 0rem;
+    }
+
+    .cnt-1303 {
+        max-width: 130rem;
+        margin: auto;
+    }
+
+    .titre_environmental {
+        margin: 5rem auto;
+    }
+
+    .para_environmental {
+        margin: 0 auto;
+    }
+    
+    .wp_environmental h2 {
+        font-size: 3rem;
+        max-width: 43rem;
+        line-height: 4rem;
+        margin-bottom: 1rem
+    }
+
+    .wp_environmental p {
+        font-size: 1.5rem;
+        margin: 4rem auto;
+        width: 74rem;
+    } 
+
+    .img_environmental {
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .coco_img {
+        width: 100%;
+    }
+
+    .bordmer_img {
+        width: 100%;
+    }
+
+/* NATURE SECTION */
+
+    .cnt-1310 {
+        width: 120rem;
+    }
+
+    .wp_nature {
+        width: 110rem;
+        margin: 8rem auto 1rem auto;
+    }
+
+    .element_nature {
+        width: 48rem;
+    }
+
+    .img_piscinebord {
+        width: 55rem;
+        padding-left: 6rem;
+        padding-bottom: 30rem;
+    }
+    
+    .element_nature p {
+        font-size: 1.4rem;
+    }
+
+    .nature_liste {
+        margin: 1rem auto 3rem 2rem;
+    }
+
+    .nature_liste li {
+        font-size: 1.2rem;
+    }
+
+     .section_nature::after {
+        left: 25%;
+        width: 50%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* RESOURCE SECTION */
+
+    .cnt-1430 {
+        max-width: 134rem;
+        margin: auto;
+    }
+
+    .wp_ressource {
+        max-width: 110%;
+        gap: 8rem;
+    }
+
+    .img_bateau {
+      width: 45rem;
+      margin: 2rem auto;
+    }
+
+    .ressource_element {
+        width: 52rem;
+    }
+
+    .ressource_element p {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .ressource_element li {
+        margin-top: 1rem;
+    }
+
+    .section_ressource::after {
+        left: 25%;
+        width: 50%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* ENERGY SECTION */
+
+    .section_energy {
+        margin: 1rem auto;
+    }
+
+    .cnt-1310 {
+        max-width: 135rem;
+    }
+
+    .wp_energy {
+        width: 100%;
+        margin: 10rem auto;
+    }
+
+    .img_piscine2 {
+        width: 47rem;
+    }
+
+    .img_piscine2_e {
+        width: 100%;
+    }
+
+    .element_energy {
+       width: 65rem;
+    }
+
+    .element_energy h2 {
+        margin-bottom: 0.5rem;
+    }
+    
+    .element_energy p {
+        font-size: 1.4rem;
+    }
+
+    .energy_liste {
+        margin: 1rem auto;
+    }
+
+    .energy_liste li {
+        font-size: 1.2rem;
+    }
+
+/* HARMONIE COMMUNITY */
+
+    .section_harmoniecommunity {
+        margin-top: 1rem;
+    }
+
+    .cnt-1300 {
+        max-width: 120rem;
+    }
+
+    .wp_harmoniecommunity {
+        display: flex;
+    }
+
+    .element_harmoniecommunity {
+        width: 80rem;
+    }
+
+    .wp_harmoniecommunity h2 {
+        font-size: 3rem;
+        max-width: 43rem;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+        margin: auto
+    
+    }
+    .wp_harmoniecommunity p {
+        font-size: 1.5rem;
+        margin: 4rem auto;
+        width: 74rem;
+    }
+
+    .wp_harmoniecommunity h2 {
+        text-align: center;
+        font-size: 2.9rem;
+        width: 95%;
+        margin: 1rem auto;
+    }
+
+    .img_harmoniecommunity {
+        flex-direction: row;
+        max-width: 60rem;
+        margin: auto;
+    }
+
+    .yatch_img {
+        width: 100%;
+    }
+
+    .couchesoleil_img {
+        width: 100%;
+    }
+
+
+/* CLIMATE HARMONIE */
+
+    .cnt-1810 {
+        max-width: 135rem;
+    }
+
+    .wp_cha {
+        font-size: 1.4rem;
+        margin: 6rem 2rem auto;
+    }
+
+    .wp_cha h2 {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+    }
+    
+    .wp_cha h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .wp_cha p {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .img_climateharmonie {
+        flex-direction: row;
+        margin: 7rem auto;
+        width: 44rem;
+    }
+
+    .element_climateharmonie a {
+        width: 25%;
+        padding: 1rem 2.5rem;
+        font-size: 1.4rem;
+    }
+   
+    .bordepiscinemer, .route, .bateauplonge {
+        width: 35rem;
+        margin: auto;
+    }
+
+/* SIGNIFICANCE HARMONIE 2 */
+
+    .cnt-1300 {
+        max-width: 130rem;
+        margin: auto;
+    }
+
+    .wp_sh_2 {
+        margin: auto;
+        font-size: 1.4rem;
+    }
+
+    .wp_sh_2 h2 {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+    }
+
+    .wp_sh_2 p {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .wp_sh_2 a {
+        margin-bottom: 10rem;
+    }
+
+    .section_significanceharmonie_2::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 1rem;
+        left: 25%;
+        width: 55%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* RELATED NEWS */
+
+    .section_relatednews {
+        margin: 5rem auto;
+    }
+
+    .cnt_relatednews {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .cnt-1450 {
+        max-width: 130rem;
+        margin: auto;
+    }
+
+    .wp_relatednews {
+        max-width: 100rem;
+        margin: auto
+    }
+
+    .related_img {
+        gap: 1rem;
+        width: 100%;
+        margin: auto;
+    }
+
+    .related_img h3 {
+        width: 26rem;
+    }
+
+
+    .related_images1 {
+        width: 100%;
+    }
+
+    .related_images2 {
+        width: 100%;
+    }
+
+    .related_images3 {
+        width: 100%;
+    }
+
+    .image_mains {
+        width: 35rem;
+    }
+
+    .image_mains_1 {
+        width: 35rem;
+    }
+
+    .image_mains_2 {
+        width: 35rem;
+    }
+
+/* FOOTER */
+
+    .cnt_footer {
+        max-width: 100%;
+    }
+
+    .wp_footer {
+        align-items: center;
+        text-align: left;
+        max-width: 100%;
+        gap: 6%;
+    }
+
+    .image_footer {
+        margin: auto;
+    }
+
+    .menu1_footer {
+        width: 20rem;
+        font-size: 1.2rem
+    }
+
+    .footer_logo {
+        width: 22rem;
+        margin-bottom: 14rem;
+    }
+
+    .follow_us {
+        margin-bottom: 13rem;
+        
+    }
+    
+    .follow_us_menu {
+        gap: 2rem;
+        margin: auto;
+        
+    }
+
+    .contact_us  {
+        max-width: 100%;
+        font-size: 1.3rem;
+        margin: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact_us h2,
+    .follow_us h2 {
+        margin-bottom: 1.2rem;
+
+    }
+    
+    .linkden, .facebook, .insta {
+        width: 3rem;
+        height: auto;
+    }
+
+
+            /* DEUXIEME PAGE ENTRE 1400px ET 1719px */
+
+
+/* HEADER */
+
+.nav_menu_element {
+    gap: 3rem;
+}
+
+.nav_menu_element::after {
+    width: 126rem;
+}
+
+
+/* SECTION VILLAN */
+
+.wp_villaN {
+    gap: 5rem;
+}
+
+.box-left {
+    margin-left: 10rem;
+}
+
+.box-right {
+   max-width: 42rem;
+   margin-left: 1rem;
+}
+
+.elements1_section_villaN h3 {
+    margin-top: 0rem;
+}
+
+.elements1_section_villaN {
+    gap: 7rem;
+}
+
+.elements1_section_villaN::after {
+    top: 10rem;
+    width: 63rem;
+}
+
+.btn_learnmore {
+    margin-top: 2rem;
+}
+
+/* SECITON VTOUR */
+
+.wp_vtour {
+    margin: 1rem 0 0 5rem;
+}
+
+/* SECTION GOLF VILLA */
+
+
+.wp_golfvilla {
+    margin: 2rem 0 0 5rem;
+}
+
+.cnt_img_section_golfvilla {
+    max-width: 51rem;
+}
+
+.text_section_golfvilla {
+    margin-top: 1rem;
+}
+
+.golfvilla_paragraphe {
+    margin-top: 1rem;
+}
+
+/* SECTION WHYBUY */
+
+.wp_whybuy {
+    gap: 14rem;
+    margin: 8rem 2rem;
+}
+
+/* SECTION STYLE */
+
+.textes_section_preferredstyle {
+    gap: 5rem;
+}
+
+.texte2 {
+    max-width: 130rem;
+}
+
+/* SECTION ADVANTAGES */
+
+.textes_advantages {
+    max-width: 112rem;
+    margin: auto;
+}
+
+/* SECTION CONTACT */
+
+.textes_contact {
+    margin: 10rem 0 10rem 16rem;
+}
+
+/* SECTION MOREVILLAS */
+
+.wp_morevillas {
+    margin: 2rem auto;
+}
+
+.cnt_img_morevillas {
+    max-width: 66rem;
+}
+
+/* SECTION FOOOTER */
+
+.cnt_footer {
+    max-width: 100%;
+    margin-top: 10rem;
+}
+
+}
+
+/* entre 1530px et 1719px */
+@media screen and (min-width: 1530px) and (max-width: 1719px) { 
+
+
+
+                            /* PREMIERE PAGE ENTRE 1530PX ET 1719PX */
+
+
+
+
+/* HEADER */
+
+    .container_header {
+        width: 100%;
+        padding: 0 1rem;
+        margin: auto;
+    }
+
+    .image_header {
+        width: 45.2rem;
+        margin: auto;
+    }
+
+    .header_logo {
+        width: 90%;
+    }
+
+    .header_menu_element {
+        max-width: 140.4rem;
+        width: 100%;
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.5rem;
+        font-size: 0.5rem;
+    }
+
+    .header_menu_element::after {
+        max-width: 144rem;
+    }
+
+/* SECTION INTRO */
+
+    .wp_intro {
+        width: 100%;
+        max-width: 90%;
+        margin: 7rem auto; 
+    }
+
+    .intro_menu {
+        max-width: 100%;
+    }
+
+    .intro_titre {
+        max-width: 83rem;
+        font-size: 5rem;
+        line-height: 6rem;
+        margin: 2.5rem auto;
+    }
+
+    .intro_menu1 {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .intro_paragraphe {
+        font-size: 1.6rem;
+        max-width: 90rem;
+        margin: 6rem auto;
+    }
+
+    .wp_img_principale {
+        max-width: 95%;
+        margin: -3rem auto;
+    }
+    
+    .intro_img {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+    }
+
+
+/* SIGNIFICANCE HARMONIE */
+
+    .cnt-67 {
+         max-width: 90.0rem;
+    }
+
+    .wp_sh {
+        font-size: 1.4rem;
+        margin: 10rem auto;
+    }
+
+    .wp_sh h2 {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+       
+    }
+
+    .wp_sh p {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .wp_sh a {
+        max-width: 19%;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+/* QUOTE SECTION */
+
+.cnt-53 {
+    max-width: 70rem;
+}
+
+.wp_quote {
+    width: 100%;
+}
+
+.quote_paragraphe {
+    font-size: 2.4rem;
+}
+
+.signature {
+    font-size:2rem;
+    margin-top: 2rem;
+}
+
+/* HARMONIE VISION */
+
+    .cnt-67 {
+        max-width: 100rem;
+    }
+
+    .wp_harmonie {
+        margin: 8rem auto;
+        align-items: center;
+    }
+
+    .img_harmonie {
+        max-width: 48rem;
+        height: auto;
+    }
+
+    .img_piscine1 {
+        width: 100%;
+        margin-bottom: 10rem;
+    }
+
+    .element_harmonie  {
+        max-width: 48rem;
+    }
+    
+    .premierpara_harmonie  {
+        width: 48rem;
+    }
+
+    .element_harmonie h3 {
+        font-size: 2.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .element_harmonie p {
+        margin-bottom: 1rem;
+    }
+
+    .harmonie_liste li {
+        margin-bottom: 0.5rem;
+    }
+
+
+/* section imagevue */
+
+.cnt-94 {
+    max-width: 95%;
+}
+.wp_imagevue {
+    width: 100%;
+}
+
+.img_vue {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+/* ENVIRONMENTAL SECTION */
+
+    .section_environmental {
+        padding-top: 3rem;
+    }
+
+    .cnt_environmental {
+        width: 100%;
+        margin:  1rem auto;
+        padding: 1rem 2rem;
+    }
+
+    .cnt-69 {
+        max-width: 106rem;
+    }
+
+    .wp_environmental h2 {
+        font-size: 3rem;
+        max-width: 43rem;
+        line-height: 4rem;
+        margin-bottom: 1rem
+    }
+
+    .wp_environmental p {
+        font-size: 1.5rem;
+        margin: 4rem auto;
+        width: 74rem;
+    } 
+    
+
+    .img_environmental {
+        flex-direction: row;
+        align-items: center;
+        max-width: 45rem;
+        margin: auto;
+    }
+
+    .coco_img {
+        width: 100%;
+    }
+
+    .bordmer_img {
+        width: 100%;
+    }
+
+/* NATURE SECTION */
+
+    .cnt-68 {
+        max-width: 100rem;
+    }
+
+    .wp_nature {
+        width: 100rem;
+        margin: 8rem auto;
+    }
+
+    .element_nature {
+        width: 43rem;
+    }
+
+    .img_piscinebord {
+        width: 50rem;
+        padding-left: 6rem;
+    }
+    
+    .element_nature p {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .nature_liste {
+        margin: 2rem auto 2rem 2rem;
+    }
+
+    .nature_liste li {
+        font-size: 1.2rem;
+    }
+
+     .section_nature::after {
+        left: 25%;
+        width: 55%;
+        height: 0.5px; 
+        background-color: black;
+    }
+
+/* RESOURCE SECTION */
+
+    .cnt-78 {
+        max-width: 120rem;
+    }
+
+    .wp_ressource {
+        max-width: 100%;
+        gap: 10rem;
+    }
+
+    .img_bateau {
+      width: 45rem;
+      margin-top: 1.5rem;
+    }
+
+    .ressource_element {
+        max-width: 60rem;
+    }
+
+    .ressource_element p {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .ressource_element li {
+        margin-top: 1rem;
+    }
+
+    .section_ressource::after {
+        left: 25%;
+        width: 55%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* ENERGY SECTION */
+
+    .section_energy {
+        margin: 1rem auto;
+    }
+
+    .cnt-68 {
+        max-width: 110rem;
+    }
+
+    .wp_energy {
+        width: 90%;
+        margin: 10rem auto;
+    }
+
+    .img_piscine2 {
+        width: 43rem;
+        padding-left: 0;
+    }
+
+    .img_piscine2_e {
+        width: 100%; 
+    }
+
+    .element_energy {
+       width: 50rem;
+    }
+
+    .element_energy h2 {
+        margin-bottom: 0.5rem;
+        margin-left: 0;
+    }
+    
+    .element_energy p {
+        font-size: 1.4rem;
+    }
+
+    .energy_liste {
+        margin: 1rem auto;
+    }
+
+    .energy_liste li {
+        font-size: 1.2rem;
+    }
+
+/* HARMONIE COMMUNITY */
+
+    .section_harmoniecommunity {
+        margin-top: rem;
+    }
+
+    .cnt-69 {
+        max-width: 106rem;
+    }
+
+    .wp_harmoniecommunity {
+        display: flex;
+    }
+
+    .element_harmoniecommunity {
+        width: 80rem;
+    }
+
+    .wp_harmoniecommunity h2 {
+        font-size: 4rem;
+        max-width: 48rem;
+        line-height: 5.2rem;
+        margin-bottom: 1rem;
+        margin: auto
+    
+    }
+    .wp_harmoniecommunity p {
+        font-size: 1.5rem;
+        margin: 4rem auto;
+        width: 78rem;
+    
+    }
+
+     .img_harmoniecommunity {
+        flex-direction: row;
+        align-items: center;
+        max-width: 45rem;
+        margin: auto;
+    }
+
+    .yatch_img {
+        width: 100%;
+    }
+    .couchesoleil_img {
+        width: 100%;
+    }
+
+
+/* CLIMATE HARMONIE */
+
+    .cnt-67 {
+        max-width: 98rem;
+    }
+
+    .wp_cha {
+        font-size: 1.4rem;
+        margin: 6rem 2rem auto;
+    }
+
+    .wp_cha h2 {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+    }
+    
+    .wp_cha h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .wp_cha p {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .img_climateharmonie {
+        flex-direction: row;
+        margin: 7rem auto;
+        width: 90%;
+        max-width: 100%;
+    }
+    .element_climateharmonie a {
+        width: 25%;
+        padding: 1rem 2.5rem;
+        font-size: 1.4rem;
+    }
+   
+    .bordepiscinemer, .route, .bateauplonge {
+        width: 40rem;
+        margin: auto;
+    }
+
+/* SIGNIFICANCE HARMONIE 2 */
+
+    .cnt-67 {
+        max-width: 100rem;
+    }
+
+    .wp_sh_2 {
+        margin: auto;
+        font-size: 1.4rem;
+    }
+
+    .wp_sh_2 h2 {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+    }
+
+    .wp_sh_2 p {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .wp_sh_2 a {
+        margin-bottom: 10rem;
+    }
+
+    .section_significanceharmonie_2::after {
+        bottom: 1rem;
+        left: 25%;
+        width: 50%;
+        height: 0.5px; 
+        background-color: black;
+    }
+
+/* RELATED NEWS */
+
+    .section_relatednews {
+        margin: 5rem auto;
+    }
+
+    .cnt_relatednews {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .cnt-68 {
+        max-width: 120rem;
+        width: 100%;
+    }
+
+    .wp_relatednews {
+        max-width: 120rem;
+    }
+
+    .related_img {
+        gap: 1rem;
+        width: 40rem;
+    }
+
+    .related_img h3 {
+        width: 40rem;
+    }
+
+    .related_img p {
+        width: 94%;
+        font-size: 1.5rem
+    }
+
+    .related_images1 {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .related_images2 {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .related_images3 {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .image_mains {
+        width: 40rem;
+    }
+
+    .image_mains_1 {
+        width: 40rem;
+    }
+
+    .image_mains_2 {
+        width: 40rem;
+    }
+
+/* FOOTER */
+
+    .cnt_footer {
+        max-width: 100%;
+    }
+
+    .wp_footer {
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        gap: 6%;
+    }
+
+    .image_footer {
+        margin: auto;
+    }
+
+    .menu1_footer {
+        width: 20rem;
+        font-size: 1.2rem
+    }
+
+    .footer_logo {
+        width: 22rem;
+        margin-bottom: 14rem;
+    }
+
+    .follow_us {
+        margin-bottom: 13rem;
+        
+    }
+    
+    .follow_us_menu {
+        gap: 2rem;
+        margin: auto;
+    }
+
+    .contact_us  {
+        max-width: 100%;
+        font-size: 1.3rem;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    
+    .linkden, .facebook, .insta {
+        width: 3rem;
+        height: auto;
+    }
+
+
+
+                    /* DEUXIEME PAGE ENTRE 1530PX ET 1719PX */
+
+
+
+ /* SECTION VILLAN */
+
+.box-left {
+    margin-left: 14rem;
+}
+
+.box-right {
+    max-width: 38rem;
+    margin-left: 1rem;
+}
+
+/* SECTION VTOUR */
+
+.wp_section_vtour {
+    margin: 1rem 0 0 8rem;
+}
+
+
+/* SECTION STYLE */
+
+.textes_section_preferredstyle {
+    gap: 6rem;
+}
+
+.texte1 {
+    margin-top: 34rem;
+}
+
+.texte3 {
+    margin-top: 34rem;
+}
+
+}
+
+/* enter 1600px et 1719px */
+@media screen and (min-width: 1600px) and (max-width: 1719px) {
+
+
+                         /* PREMIERE PAGE ENTRE 1600PX ET 1719PX */
+
+
+/* HEADER */
+
+    .container_header {
+        width: 80%;
+        padding: 0 1rem;
+        margin: auto;
+    }
+
+    .image_header {
+        width: 45.2rem;
+        margin: auto;
+    }
+
+    .header_logo {
+        width: 90%;
+    }
+
+    .header_menu_element {
+        max-width: 118.4rem;
+        width: 100%;
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.5rem;
+        font-size: 0.5rem;
+    }
+
+    .header_menu_element::after {
+        width: 105%;
+        max-width: 105%;
+    }
+
+/* SECTION INTRO */
+
+    .wp_intro {
+        width: 100%;
+        max-width: 90%;
+        margin: 6.5rem auto;
+    }
+
+    .intro_menu {
+        max-width: 100%;
+    }
+
+    .intro_titre {
+        max-width: 75.0rem;
+        font-size: 4.5rem;
+        line-height: 5rem;
+        margin: 2.5rem auto;
+    }
+
+    .intro_menu1 {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .intro_paragraphe {
+        font-size: 1.6rem;
+        max-width: 90rem;
+        margin: 6rem auto;
+    }
+
+    .wp_img_principale {
+        max-width: 95%;
+        margin: -3rem auto;
+    }
+
+    .intro_img {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+    }
+
+
+/* SIGNIFICANCE HARMONIE */
+
+    .cnt-67 {
+         max-width: 100rem;
+    }
+
+    .wp_sh {
+        font-size: 1.4rem;
+        margin: 10rem auto;
+    }
+
+    .wp_sh h2 {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+       
+    }
+
+    .wp_sh p {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .wp_sh a {
+        max-width: 19%;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+/* QUOTE SECTION */
+
+    .cnt-53 {
+        max-width: 70rem;
+    }
+
+    .wp_quote {
+        width: 100%;
+    }
+
+    .quote_paragraphe {
+        font-size: 2.4rem;
+    }
+
+    .signature {
+        font-size:2rem;
+        margin-top: 2rem;
+    }
+
+/* HARMONIE VISION */
+
+    .cnt-67 {
+        max-width: 100rem;
+    }
+
+    .wp_harmonie {
+        margin: 8rem auto;
+        align-items: center;
+    }
+
+    .img_harmonie {
+        max-width: 50rem;
+        height: auto;
+    }
+
+    .img_piscine1 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .element_harmonie  {
+        max-width: 48rem;
+        margin-left: 1rem;
+    }
+    
+    .premierpara_harmonie  {
+        width: 48rem;
+    }
+
+    .element_harmonie h3 {
+        font-size: 2.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .element_harmonie p {
+        margin-bottom: 1rem;
+    }
+
+    .harmonie_liste li {
+        margin-bottom: 0.5rem;
+    }
+    
+
+/* section imagevue */
+
+    .cnt-94 {
+        max-width: 95%;
+    }
+    .wp_imagevue {
+        width: 100%;
+    }
+
+    .img_vue {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+/* ENVIRONMENTAL SECTION */
+
+    .section_environmental {
+        padding-top: 3rem;
+    }
+
+    .cnt_environmental {
+        width: 100%;
+        margin:  1rem auto;
+        padding: 1rem 2rem;
+    }
+
+    .cnt-69 {
+        max-width: 106rem;
+    }
+
+    .wp_environmental {
+        width: 100%;
+    }
+
+    .wp_environmental h2 {
+        font-size: 4rem;
+        max-width: 54rem;
+        line-height: 5rem;
+        margin-bottom: 1rem
+    }
+
+    .wp_environmental p {
+        font-size: 1.7rem;
+        margin: 4rem auto;
+        width: 85rem;
+    } 
+    
+    .img_environmental {
+        flex-direction: row;
+        align-items: center;
+        max-width: 57rem;
+        margin: auto;
+    }
+
+    .coco_img {
+        width: 100%;
+    }
+
+    .bordmer_img {
+        width: 100%;
+    }
+
+/* NATURE SECTION */
+
+    .cnt-68 {
+        width: 120rem;
+    }
+
+    .wp_nature {
+        width: 115rem;
+        margin: 8rem auto;
+    }
+
+    .element_nature {
+        width: 55rem;
+        margin-left: 0;
+    }
+
+    .img_piscinebord {
+        width: 52rem;
+        padding-left: 6rem;
+    }
+    
+    .element_nature p {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .nature_liste {
+        margin: 2rem auto 2rem 2rem;
+    }
+
+    .nature_liste li {
+        font-size: 1.2rem;
+    }
+
+     .section_nature::after {
+        left: 30%;
+        width: 40%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* RESOURCE SECTION */
+
+    .cnt-78 {
+        max-width: 137rem;
+    }
+
+    .wp_ressource {
+        max-width: 130rem;
+        gap: 10rem;
+    }
+
+    .img_bateau {
+      width: 52rem;
+      margin-top: 1.5rem;
+    }
+
+    .ressource_element {
+        max-width: 48rem;
+    }
+
+    .ressource_element p {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+        width: 118%;
+    }
+
+    .ressource_element li {
+        margin-top: 1rem;
+    }
+
+    .section_ressource::after {
+        left: 30%;
+        width: 40%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* ENERGY SECTION */
+
+    .section_energy {
+        margin: 1rem auto;
+    }
+
+    .cnt-68 {
+        max-width: 140rem;
+    }
+
+    .wp_energy {
+        width: 126rem;
+        margin: 10rem auto;
+    }
+
+    .img_piscine2 {
+        width: 47rem;
+    }
+
+    .img_piscine2_e {
+        width: 100%; 
+    }
+
+    .element_energy {
+       width: 64rem;
+    }
+
+    .element_energy h2 {
+        margin-bottom: 0.5rem;
+        margin-left: 0;
+    }
+    
+    .element_energy p {
+        font-size: 1.4rem;
+    }
+
+    .energy_liste {
+        margin: 1rem auto;
+    }
+
+    .energy_liste li {
+        font-size: 1.2rem;
+    }
+
+/* HARMONIE COMMUNITY */
+
+    .section_harmoniecommunity {
+        margin-top: 1rem;
+    }
+
+    .cnt-69 {
+        max-width: 106rem;
+    }
+
+    .wp_harmoniecommunity {
+        display: flex;
+    }
+
+    .element_harmoniecommunity {
+        width: 90rem;
+    }
+
+    .wp_harmoniecommunity h2 {
+        text-align: center;
+        font-size: 5rem;
+        max-width: 90rem;
+        line-height: 6rem;
+        margin: 1rem auto;
+    }
+
+    .wp_harmoniecommunity p {
+        font-size: 1.7rem;
+        margin: 4rem auto;
+        width: 90rem;
+    }
+
+     .img_harmoniecommunity {
+        flex-direction: row;
+        align-items: center;
+        max-width: 52rem;
+        margin: auto;
+    }
+
+    .yatch_img {
+        width: 100%;
+    }
+
+    .couchesoleil_img {
+        width: 100%;
+    }
+
+
+/* CLIMATE HARMONIE */
+
+    .cnt-67 {
+        max-width: 98rem;
+    }
+
+    .wp_cha {
+        font-size: 1.4rem;
+        margin: 6rem 2rem auto;
+    }
+
+    .wp_cha h2 {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+    }
+    
+    .wp_cha h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .wp_cha p {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .img_climateharmonie {
+        flex-direction: row;
+        margin: 7rem auto;
+        width: 90%;
+        max-width: 100%;
+    }
+    .element_climateharmonie a {
+        width: 25%;
+        padding: 1rem 2.5rem;
+        font-size: 1.4rem;
+    }
+   
+    .bordepiscinemer, .route, .bateauplonge {
+        width: 43rem;
+        margin: auto;
+    }
+
+/* SIGNIFICANCE HARMONIE 2 */
+
+    .cnt-67 {
+        max-width: 110rem;
+        margin: auto;
+    }
+
+    .wp_sh_2 {
+        margin: auto;
+        font-size: 1.4rem;
+    }
+
+    .wp_sh_2 h2 {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+    }
+
+    .wp_sh_2 p {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .wp_sh_2 a {
+        margin-bottom: 10rem;
+    }
+
+    .section_significanceharmonie_2::after {
+        bottom: 1rem;
+        left: 25%;
+        width: 48%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* RELATED NEWS */
+
+    .section_relatednews {
+        margin: 5rem auto;
+    }
+
+    .cnt_relatednews {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .cnt-68 {
+        max-width: 130rem;
+        width: 100%;
+    }
+
+    .wp_relatednews {
+        max-width: 130rem;
+    }
+
+    .related_img {
+        gap: 1rem;
+        width: 44rem;
+    }
+
+    .related_img h3 {
+        width: 26rem;
+    }
+
+    .related_img p {
+        width: 94%;
+        font-size: 1.5rem
+    }
+
+    .related_images1 {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .related_images2 {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .related_images3 {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .image_mains {
+        width: 44rem;
+    }
+
+    .image_mains_1 {
+        width: 44rem;
+    }
+
+    .image_mains_2 {
+        width: 44rem;
+    }
+
+/* FOOTER */
+
+    .cnt_footer {
+        max-width: 100%;
+    }
+
+    .wp_footer {
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        gap: 6%;
+    }
+
+    .image_footer {
+        margin: auto;
+    }
+
+    .menu1_footer {
+        width: 25rem;
+        font-size: 1.2rem;
+    }
+
+    .footer_logo {
+        width: 22rem;
+        margin-bottom: 14rem;
+    }
+
+    .follow_us {
+        margin-bottom: 13rem;
+        
+    }
+    
+    .follow_us_menu {
+        gap: 2rem;
+        margin: auto;
+    }
+
+    .contact_us  {
+        max-width: 100%;
+        font-size: 1.3rem;
+        margin: auto;
+        margin-bottom: 0.5rem;
+    }
+    
+    .linkden, .facebook, .insta {
+        width: 3rem;
+        height: auto;
+    }
+
+
+
+                            /* DEUXIEME PAGE ENTRE 1600PX ET 1719PX */
+
+
+/* SECTION VTOUR */
+
+.wp_section_vtour {
+    margin: 1rem 0 0 25rem;
+}
+
+
+}
+
+/* entre 1720px et 1900px */
+@media screen and (min-width: 1720px) and (max-width: 1900px) { 
+
+
+                            /* PREMIERE PAGE ENTRE 1720PX ET 1900PX */
+
+
+
+/* HEADER */
+
+    .container_header {
+        width: 80%;
+        padding: 0 1rem;
+        margin: auto;
+    }
+
+    .image_header {
+        width: 45.2rem;
+        margin: auto;
+    }
+
+    .header_logo {
+        width: 90%;
+    }
+
+    .header_menu_element {
+        max-width: 118.4rem;
+        width: 100%;
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.5rem;
+        font-size: 0.5rem;
+    }
+
+    .header_menu_element::after {
+        max-width: 124rem;
+    }
+
+/* SECTION INTRO */
+
+    .wp_intro {
+        max-width: 94%;
+        margin: 7rem auto;
+    }
+
+    .intro_menu {
+        max-width: 100%;
+    }
+
+    .intro_titre {
+        width: 90rem;
+        font-size: 5.5rem;
+        line-height: 6rem;
+        margin: 2.5rem auto;
+    }
+
+    .intro_menu1 {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .intro_paragraphe {
+        font-size: 1.6rem;
+        max-width: 100rem;
+        margin: 6rem auto;
+    }
+  
+/* SECTION INTRO IMAGE  */
+
+    .intro_img {
+        max-width: 97%;
+        margin: auto;
+        display: block;
+    }
+
+
+/* SIGNIFICANCE HARMONIE */
+
+    .cnt-1300 {
+         max-width: 90.0rem;
+    }
+
+    .wp_sh {
+        font-size: 1.4rem;
+        margin: 10rem auto;
+    }
+
+    .wp_sh h2 {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+    }
+
+    .wp_sh p {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .wp_sh a {
+        max-width: 19%;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+/* QUOTE SECTION */
+
+.cnt-1020 {
+    max-width: 70rem;
+}
+
+.wp_quote {
+    width: 100%;
+}
+
+.quote_paragraphe {
+    font-size: 2.4rem;
+}
+
+.signature {
+    font-size:2rem;
+    margin-top: 2rem;
+}
+
+/* HARMONIE VISION */
+
+    .cnt-1300 {
+        max-width: 100rem;
+        margin: auto;
+    }
+
+    .wp_harmonie {
+        margin: 8rem auto;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    .img_harmonie {
+        max-width: 45rem;
+        height: auto;
+    }
+
+    .img_piscine1 {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .element_harmonie  {
+        max-width: 50rem;
+    }
+    
+    .premierpara_harmonie  {
+        width: 48rem;
+    }
+
+    .element_harmonie h3 {
+        font-size: 2.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .element_harmonie p {
+        margin-bottom: 1rem;
+    }
+
+    .harmonie_liste li {
+        margin-bottom: 0.5rem;
+    }
+    
+
+/* section imagevue */
+
+.cnt-1800 {
+    max-width: 95%;
+}
+.wp_imagevue {
+    width: 100%;
+}
+
+.img_vue {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+/* ENVIRONMENTAL SECTION */
+
+    .section_environmental {
+        padding-top: 3rem;
+    }
+
+    .cnt-1300 {
+        max-width: 110rem;
+    }
+
+    .wp_environmental h2 {
+        font-size: 4rem;
+        max-width: 55rem;
+        line-height: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .wp_environmental p {
+        font-size: 1.6rem;
+        margin: 4rem auto;
+        width: 77rem;
+    } 
+    
+
+    .img_environmental {
+        flex-direction: row;
+        align-items: center;
+        max-width: 50rem;
+        margin: auto;
+    }
+
+    .coco_img {
+        width: 100%;
+    }
+
+    .bordmer_img {
+        width: 100%;
+    }
+
+/* NATURE SECTION */
+
+    .cnt-1310 {
+        max-width: 110rem;
+    }
+
+    .wp_nature {
+        width: 105rem;
+        margin: 8rem auto;
+    }
+
+    .element_nature {
+        width: 50rem;
+    }
+
+    .img_piscinebord {
+        width: 46rem;
+        padding-left: 6rem;
+    }
+    
+    .element_nature p {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .nature_liste {
+        margin: 2rem auto 2rem 2rem;
+    }
+
+    .nature_liste li {
+        font-size: 1.2rem;
+    }
+
+     .section_nature::after {
+        left: 30%;
+        width: 40%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* RESOURCE SECTION */
+
+    .cnt-1430 {
+        max-width: 120rem;
+    }
+
+    .wp_ressource {
+        max-width: 100%;
+        gap: 8rem;
+    }
+
+    .img_bateau {
+      width: 43rem;
+      margin-top: 1.5rem;
+    }
+
+    .ressource_element {
+        max-width: 53rem;
+    }
+
+    .ressource_element p {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .ressource_element li {
+        margin-top: 1rem;
+    }
+
+    .section_ressource::after {
+        left: 30%;
+        width: 40%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* ENERGY SECTION */
+
+    .section_energy {
+        margin: 1rem auto;
+    }
+
+    .cnt-1310 {
+        max-width: 110rem;
+    }
+
+    .wp_energy {
+        width: 90%;
+        margin: 10rem auto;
+    }
+
+    .img_piscine2 {
+        width: 45rem;
+        padding-left: 0;
+    }
+
+    .img_piscine2_e {
+        width: 100%; 
+    }
+
+    .element_energy {
+       width: 50rem;
+    }
+
+    .element_energy h2 {
+        margin-bottom: 0.5rem;
+        margin-left: 0;
+    }
+    
+    .element_energy p {
+        font-size: 1.4rem;
+    }
+
+    .energy_liste {
+        margin: 1rem auto;
+    }
+
+    .energy_liste li {
+        font-size: 1.2rem;
+    }
+
+/* HARMONIE COMMUNITY */
+
+    .section_harmoniecommunity {
+        margin-top: 1rem;
+    }
+
+    .cnt-1300 {
+        max-width: 120rem;
+    }
+
+    .wp_harmoniecommunity {
+        display: flex;
+        max-width: 120rem;
+    }
+
+    .element_harmoniecommunity {
+        width: 80rem;
+    }
+
+    .wp_harmoniecommunity p {
+        font-size: 1.5rem;
+        margin: 4rem auto;
+        width: 84rem;
+    }
+
+    .wp_harmoniecommunity h2 {
+        text-align: center;
+        font-size: 4.5rem;
+        line-height: 6rem;
+        width: 95%;
+        margin: 1rem auto;
+    }
+
+     .img_harmoniecommunity {
+        flex-direction: row;
+        align-items: center;
+        max-width: 50rem;
+        margin: auto;
+    }
+
+    .yatch_img {
+        width: 100%;
+    }
+    .couchesoleil_img {
+        width: 100%;
+    }
+
+
+/* CLIMATE HARMONIE */
+
+    .cnt-1810 {
+        max-width: 98rem;
+    }
+
+    .wp_cha {
+        font-size: 1.4rem;
+        margin: 6rem 2rem auto;
+    }
+
+    .wp_cha h2 {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+    }
+    
+    .wp_cha h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .wp_cha p {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .img_climateharmonie {
+        flex-direction: row;
+        margin: 7rem auto;
+        width: 90%;
+        max-width: 100%;
+    }
+    .element_climateharmonie a {
+        width: 25%;
+        padding: 1rem 2.5rem;
+        font-size: 1.4rem;
+    }
+   
+    .bordepiscinemer, .route, .bateauplonge {
+        width: 40rem;
+        margin: auto;
+    }
+
+/* SIGNIFICANCE HARMONIE 2 */
+
+    .cnt-1300 {
+        max-width: 105rem;
+    }
+
+    .wp_sh_2 {
+        margin: auto;
+        font-size: 1.4rem;
+    }
+
+    .wp_sh_2 h2 {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-size: 2.5rem;
+    }
+
+    .wp_sh_2 p {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .wp_sh_2 a {
+        margin-bottom: 10rem;
+    }
+
+    .section_significanceharmonie_2::after {
+        bottom: 1rem;
+        left: 25%;
+        width: 50%;
+        height: 1px; 
+        background-color: black;
+    }
+
+/* RELATED NEWS */
+
+    .section_relatednews {
+        margin: 5rem auto 15rem auto;
+    }
+
+    .cnt-1450 {
+        max-width: 120rem;
+    }
+
+    .wp_relatednews {
+        max-width: 120rem;
+    }
+
+    .related_img {
+        gap: 1rem;
+        width: 40rem;
+    }
+
+    .related_img h3 {
+        width: 40rem;
+    }
+
+    .related_img p {
+        width: 94%;
+        font-size: 1.5rem
+    }
+
+    .related_images1 {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .related_images2 {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .related_images3 {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .image_mains {
+        width: 40rem;
+    }
+
+    .image_mains_1 {
+        width: 40rem;
+    }
+
+    .image_mains_2 {
+        width: 40rem;
+    }
+
+/* FOOTER */
+
+    .wp_footer {
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        gap: 12rem;
+    }
+
+    .image_footer {
+        margin: auto;
+    }
+
+    .footer_logo {
+        width: 22rem;
+        margin-bottom: 14rem;
+    }
+
+    .menu1_footer {
+        width: 30rem;
+        font-size: 1.2rem
+    }
+
+    .follow_us {
+        margin-bottom: 13rem;
+        max-width: 14rem;
+    }
+    
+    .follow_us_menu {
+        gap: 2rem;
+        margin: auto;
+    }
+
+    .contact_us  {
+        max-width: 16rem;
+        font-size: 1.3rem;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    
+    .linkden, .facebook, .insta {
+        width: 4rem;
+        height: auto;
+        margin: auto;
+    }
+
+
+
+             /* DEUXIEME PAGE ENTRE 1720PX ET 1900PX */
+
+
+
+/* SECTION VILLAN */
+
+.elements1_section_villaN {
+    max-width: 77rem;
+    gap: 12rem;
+}
+
+.elements1_section_villaN h3 {
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.btn_learnmore {
+    margin-top: 2rem;
+}
+
+.btn_learnmore {
+    margin-top: 5rem;
+}
+
+.elements1_section_villaN::after {
+    top: 12rem;
+    width: 75rem;
+}
+
+.box-right {
+    width: 42rem;
+    margin-left: auto;
+}
+
+/* SECTION VTOUR */
+
+.cnt_1305 {
+    width: 136.5rem;
+}
+
+.wp_section_vtour {
+    margin: 1rem 0 0 4rem;
+}
+
+/* SECTION STYLE */
+
+.texte1 {
+    margin-top: 34rem;
+}
+
+.texte3 {
+    margin-top: 34rem;
+}
+
+/* SECITON WHYBUY */
+
+.wp_whybuy::after {
+    width: 130rem;
+    height: 0.5px;
+}
+
+/* SECTION MOREVILLAS */
+
+.wp_morevillas {
+    margin: 7rem auto;
+}
+
+/* FOOTER */
+
+.wp_footer {
+    margin-top: 8rem;
+    gap: 14rem;
+}
+
+.image_footer {
+    max-width: 26rem;
+}
+
+.footer_logo {
+    width: 100%;
+    margin-bottom: 14rem;
+}
+
+.menu1_footer {
+    font-size: 1.4rem;
+}
+
+.contact_us {
+    max-width: 20rem;
+    font-size: 1.4rem;
+}
+
+}
+
+
+
+

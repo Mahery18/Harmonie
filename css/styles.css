@@ -1,0 +1,1533 @@
+
+html {
+    font-size: 62.5%; 
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+section {
+    width: 100%;
+    display: flex;
+}
+
+.cnt {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cnt_wp {
+    width: 100%;
+    display: flex;
+}
+
+.img-res {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    vertical-align: bottom;
+}
+
+
+
+                            /* CSS PREMIERE PAGE */
+
+
+
+
+/* Header */
+
+.wp_header {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cnt_img {
+    display: flex;
+    align-items: center;
+}
+
+.burger_menu {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1;
+}
+
+.burger_menu span {
+    width: 100%;
+    height: 3px;
+    background: #000; 
+    transition: all 0.3s ease;
+}
+
+.burger_menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger_menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger_menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.nav_menu {
+    display: flex;
+}
+
+.nav_menu .header_menu_element .separator {
+    width: 1px;
+    height: 30px; 
+    background-color: #000;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px; 
+}
+
+.nav_menu .header_menu_element .separator a {
+    display: none; 
+}
+
+.header_menu_element {
+    display: flex;
+    list-style: none;
+    gap: 3rem; 
+    position: relative;
+    margin: 4rem auto;
+}
+
+.header_menu_element li a {
+    text-decoration: none;
+    color: #000; 
+    font-size: 1.6rem;
+}
+
+.header_menu_element::after {
+    content: "";
+    position: absolute;
+    width: 128.3rem; 
+    height: 0.1rem; 
+    background-color: #333; 
+}
+
+
+/* ---------------------- SECTION INTRO ---------------------- */
+
+
+.cnt-1810 {
+    max-width: 180.9rem;
+}
+
+.section_intro .cnt_wp {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.intro_menu {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    max-width: 42.9rem;
+    margin: auto;
+}
+
+.intro_menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.intro_menu a:not(:last-child)::after {
+  content: ">";
+  margin: 0 1.5rem;
+  color: #333;
+}
+
+.intro_titre {
+  font-size: 5.5rem;
+  text-align: center;
+  margin: 4.5rem auto;
+  max-width: 105.9rem;
+  line-height: 7rem;
+}
+
+.intro_menu1 {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 1.3rem;
+  max-width: 19.7rem;
+  margin: auto;
+}
+
+.intro_menu1 a {
+  background-color: #E6DDCB;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  text-align: center;
+}
+
+.intro_paragraphe {
+  margin: 6.5rem auto;
+  max-width: 101.5rem;
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+
+/* Image Intro */
+
+.cnt-1810 {
+    max-width: 180.9rem;
+}
+
+/* ---------------------- SIGNIFICANCE HARMONIE ---------------------- */
+
+.cnt-1300 {
+    max-width: 129.9rem;
+}
+
+.section_significanceharmonie .cnt_wp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    margin-top: 7rem;
+}
+
+.titresh {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+}
+
+.parash {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    margin: auto;  
+}
+
+.button_learnmore a {
+    display: inline-block;
+    background-color: #E6DDCB;
+    text-decoration: none;
+    color: #333;
+    padding: 1.3rem 4rem;
+    font-size: 1.4rem;
+    transition: background-color 0.3s ease;
+    width: 16rem;
+    margin-top: 3rem;
+}
+
+
+/* ---------------------- QUOTE SECTION ---------------------- */
+
+.section_quote {
+    padding: 15rem 15rem;
+}
+
+.cnt-1020 {
+    max-width: 102.1rem;
+}
+
+.section_quote  .cnt_wp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img_quote {
+    max-width: 6rem;
+    margin-bottom: 2rem;
+}
+
+.quote_paragraphe {
+    font-size: 3.5rem;
+    font-style: italic;
+}
+
+.signature {
+    font-size: 2.3rem;
+    margin-top: 1.5rem;
+    text-align: right;
+    margin-right: 4rem;
+}
+
+/* ---------------------- HARMONIE VISION ---------------------- */
+
+.cnt-1306 {
+    max-width: 130.0rem;
+}
+
+.section_harmonie .cnt_wp {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+.img_piscine1 {
+  width: 55rem;
+}
+
+.titre_harmonie {
+  font-size: 3.0rem;
+  margin-bottom: 1rem;
+}
+
+.premierpara_harmonie {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  width: 60.6rem;
+}
+
+.element_harmonie {
+    width: 64.7rem;
+    height: auto;
+}
+
+.harmonie_contenu {
+  padding-left: 2rem;
+  max-width: 60.6rem;
+  font-size: 1.6rem;
+}
+
+.titre1_harmonie {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.para_harmonie,
+.harmonie_liste li {
+  max-width: 64.6rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* ---------------------- IMAGE VUE ---------------------- */
+
+.cnt-1800 {
+    max-width: 1800rem;
+}
+
+.img_vue_cnt {
+    width: 95%;
+    margin: 12rem auto;
+}
+
+/* ---------------------- ENVIRONMENTAL SECTION ---------------------- */
+
+
+.section_environmental {
+    background-color: #777269;
+    padding: 7rem 1rem 9rem 1rem;
+}  
+
+.cnt-1303 {
+    max-width: 130.1rem;
+}
+
+.section_environmental .cnt_wp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titre_environmental {
+    color: white;
+    font-size: 4.5rem;
+    margin: 1rem auto;
+    line-height: 6rem;
+    max-width: 70rem;
+}
+
+.para_environmental {
+    color: white;
+    font-size: 1.8rem;
+    margin: 5rem auto;
+    max-width: 85rem;
+}
+
+.img_environmental {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* ---------------------- NATURE SECTION ---------------------- */
+
+.section_nature {
+    position: relative;
+}
+
+.cnt-1310 {
+    max-width: 130.9rem;
+}
+
+.section_nature .cnt_wp {
+    display: flex;
+    gap: 8rem;
+    margin: 7rem auto;
+}
+
+.element_nature {
+    width: 64.8rem;
+    height: auto;
+    margin-left: 3.5rem; 
+}
+
+.titre_nature {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+}
+
+.premierpara_nature {
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+.nature_liste {
+    margin: 3rem 1rem 3rem 2rem; 
+}
+
+.titre1_nature {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.titre_nature {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.para_nature {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.img_piscinebord {
+    width: 55rem;
+    padding-left: 4rem;
+    padding-bottom: 36rem;
+}
+
+.section_nature::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 55rem;
+    width: 85rem;
+    height: 1px;
+    background-color: black;
+}
+
+/* ---------------------- RESSOURCE SECTION ---------------------- */
+
+.section_ressource {
+    position: relative;
+}
+
+.cnt-1430 {
+    max-width: 143.0rem;
+}
+
+.section_ressource .cnt_wp {
+    width: 100%;
+    display: flex;
+    gap: 12rem;
+    padding: 10rem 10rem;
+}
+
+.img_bateau {
+    width: 55.0rem;
+    margin: auto;
+}
+
+.ressource_element {
+    width: 65.9rem;
+}
+
+.titre1_ressource {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+
+.premierpara_ressource {
+    margin-left: 0;
+    font-size: 1.6rem;
+}
+
+.titre_ressource {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.para_ressource {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.ressource_element li {
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.section_ressource::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 55rem;
+    width: 85rem;
+    height: 1px; 
+    background-color: black;
+}
+
+
+/* ---------------------- ENERGY SECTION ---------------------- */
+
+
+.section_energy {
+    position: relative;
+}
+
+.cnt-1310 {
+    max-width: 130.9rem;
+}
+
+.section_energy .cnt_wp {
+    display: flex;
+    gap: 2rem;
+    margin: 10rem auto;
+    position: relative;
+}
+
+.element_energy {
+    max-width: 63.7rem;
+    margin: auto;  
+}
+
+.titre1_energy {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0;
+}
+
+.premierpara_energy {
+    margin-left: 0;
+    font-size: 1.8rem;
+}
+
+.energy_liste {
+    margin: 3rem auto;
+}
+
+.energy_liste li {
+    margin-left: 2rem;
+}
+
+.energy_liste .no-bullet {
+    list-style: none; 
+    margin-bottom: 3rem;
+}
+
+.energy_liste a {
+    display: inline-block;
+    border: 1px solid #444343;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4rem;
+    transition: background-color 0.3s ease;
+}
+
+.titre_energy {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.para_energy {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.img_piscine2 {
+    width: 54.0rem;
+    height: auto;
+    padding-left: 4rem;
+}
+
+
+
+/* ---------------------- HARMONIE COMMUNITY ---------------------- */
+
+
+.section_harmoniecommunity {
+    background-color: #777269;
+    margin-top: 5rem;
+}
+
+.cnt-1300 {
+    max-width: 140.1rem;
+}
+
+.section_harmoniecommunity .cnt_wp {
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.titre_harmoniecommunity {
+    color: white;
+    font-size: 5rem;
+    margin: auto;
+    line-height: 6.2rem;
+    max-width: 62rem;
+}
+
+.paragraphe_harmoniecommunity {
+    color: white;
+    font-size: 1.8rem;
+    margin: 5rem auto;
+    max-width: 112rem;
+}
+
+.paragraphe1_harmoniecommunity {
+    color: white;
+    font-size: 1.8rem;
+    margin: 4rem auto;
+    max-width: 112rem;
+}
+
+.img_harmoniecommunity {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* ---------------------- CLIMATE HARMONIE ---------------------- */
+
+
+.cnt-1810 {
+    max-width: 180.9rem;
+}
+
+.section_climateharmonie .cnt_wp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin-top: 7rem;
+}
+
+.element_climateharmonie {
+    max-width: 130rem;
+    margin: auto;
+}
+
+.titre_cha {
+    margin-bottom: 0.1rem;
+    font-size: 3.5rem;
+}
+
+.titre1_cha {
+    margin-bottom: 0.2rem;
+    font-size: 3.5rem;
+}
+
+.para_cha {
+    font-size: 1.8rem;
+    width: 129.9rem;
+    margin: auto;
+    margin-bottom: 0.5rem;
+}
+
+.button_learnmore1 a {
+    display: inline-block;
+    background-color: #E6DDCB;
+    text-decoration: none;
+    color: #333;
+    padding: 1.3rem 4rem;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+    width: 45rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.img_climateharmonie {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    width: 152rem;
+    margin-top: 11rem;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* ---------------------- SIGNIFICANCE HARMONIE 2 ---------------------- */
+
+
+.section_significanceharmonie_2 {
+    position: relative;
+}
+
+.cnt-1300 {
+    max-width: 129.9rem;
+}
+
+.section_significanceharmonie_2 .cnt_wp {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    margin-top: 7rem;
+}
+
+.titresh {
+    margin-bottom: 0.5rem;
+    font-size: 3.5rem;
+}
+
+.parash {
+    font-size: 1.8rem;
+    margin: auto;
+}
+
+.buttonsh a {
+    display: inline-block;
+    background-color: #E6DDCB;
+    text-decoration: none;
+    color: #333;
+    padding: 1.3rem 4rem;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+    width: 16rem;
+    margin-top: 3rem;
+    margin-bottom: 15rem;
+}
+
+.section_significanceharmonie_2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 28%;
+    width: 45%;
+    height: 1px; 
+    background-color: black;
+}
+
+/* ---------------------- RELATED NEWS ---------------------- */
+
+.section_relatednews {
+    margin: 10rem auto;
+}
+
+.cnt-1450 {
+    max-width: 145.0rem;
+}
+
+.section_relatednews .cnt_wp {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 150rem;
+}
+
+.titre_related {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.related_img {
+    display: flex;
+    gap: 2rem;
+    max-width: 145rem;
+}
+
+.ttlrelated  {
+    font-size: 2rem;
+    margin: 1rem 0;
+    max-width: 40rem;
+}
+
+.related_content {
+    width: 39rem;
+    font-size: 1.5rem;
+}
+
+.date {
+    font-size: 1.5rem;
+}
+
+.menu1, .menu2, .menu3 {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.menu1 a, .menu2 a, .menu3 a {
+    background-color: #E6DDCB;
+    border-radius: 2rem;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+
+
+.footer {
+    width: 100%;
+    display: flex;
+}
+
+.wp_footer {
+    display: flex;
+    margin: auto;
+    gap: 22rem; 
+    padding: 6rem 6rem;
+    background-color: #333;
+}
+
+.image_footer {
+    max-width: 35rem;
+}
+
+.menu1_footer, .follow_us, .contact_us {
+    width: 13%;
+    font-size: 1.5rem;
+}
+
+.menu1_footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.contact_us a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact_us h2, .follow_us h2 {
+    margin-bottom: 1.2rem;
+    color: white;
+}
+
+.follow_us_menu {
+    display: flex;
+    gap: 1rem;
+    margin: auto;
+}
+
+
+
+
+                         /* CSS DEUXIEME PAGE */
+
+
+
+
+/* HEADER */
+
+.cnt_img {
+    width: 45.2rem;
+    margin: auto;
+}
+
+.nav_menu_element {
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3.8rem;
+    position: relative;
+}
+
+.nav_menu_element a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+}
+
+.separator {
+    width: 1px;
+    height: 2.5rem; 
+    background-color: black;
+}
+
+.nav_menu_element::after {
+    content: "";
+    position: absolute;
+    width: 137rem;
+    height: 0.5px;
+    background-color: #050505;
+    top: 4rem;
+}
+
+/* SECTION VILLA_N */
+
+.section_villaN {
+    padding: 10rem 0;
+}
+
+.cnt_1510 {
+    max-width: 151rem;
+}
+
+.box-left {
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+}
+
+.box-right {
+    width: 30%;
+    margin-left: auto;
+}
+
+.menu_section_villaN {
+    display: flex;
+    position: relative;
+    font-size: 1.3rem;
+    gap: 1rem;
+}
+
+.menu_section_villaN a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu_section_villaN a:not(:last-child)::after {
+  content: ">";
+  margin: 0 2rem 2rem;
+  color: #333;
+}
+
+.villaN_titre1 {
+    font-size: 5rem;
+    margin: 2rem auto;
+}
+
+.villaN_textes {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+.elements1_section_villaN {
+    display: flex;
+    gap: 15rem;
+    margin-bottom: 0.1rem;
+    position: relative;
+}
+
+.elements1_section_villaN h3 {
+    font-size: 1.9rem;
+    margin-top: 3rem;
+    margin-bottom: 0.1rem;
+}
+
+.elements1_section_villaN p {
+    font-size: 3.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+.elements1_section_villaN::after {
+    content: "";
+    top: 15rem;
+    width: 80rem;
+    position: absolute;
+    background-color: #050505;
+    height: 0.5px;   
+}
+
+.btn_learnmore {
+    margin-top: 5rem;
+}
+
+.btn_learnmore a {
+    display: inline-block;
+    background-color: #E6DDCB;
+    text-decoration: none;
+    color: #333;
+    padding: 1.3rem 3rem;
+    font-size: 1.4rem;
+    transition: background-color 0.3s ease;
+    width: 14rem;
+}
+
+
+/* SECTION VIRTUAL TOUR */
+
+
+.cnt_1300 {
+    max-width: 130rem;
+}
+
+.img1 {
+    max-width: 67rem;
+}
+
+.img2_text {
+    flex-direction: column;
+    margin-top: 6.5rem;
+    margin-left: 6rem;
+}
+
+.link_section_vtour {
+    margin-bottom: 4rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.link_section_vtour a {
+    text-decoration: none;
+    background-color:#646262;
+    color: #E6DDCB;
+    padding: 2rem 8.9rem;
+}
+
+/* SECTION GOLF VILLA */
+
+.section_golfvilla {
+    padding-top: 10rem;
+}
+
+.cnt_1535 {
+    max-width: 128.5rem;
+}
+
+.text_section_golfvilla {
+    margin-top: 4rem;
+    max-width: 60rem;
+}
+
+.golfvilla_titre {
+    font-size: 3.5rem;
+}
+
+.golfvilla_paragraphe {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+}
+
+.cnt_img_section_golfvilla {
+    max-width: 66rem;
+    margin-left: 7rem;
+}
+
+/* SECTION DESCRIPITON VILLA N */
+
+.section_descvillan {
+    background-color: #777269;
+    margin: 10rem 0 auto;
+}
+
+.cnt_1301 {
+    max-width: 130.1rem;
+}
+
+.wp_descvillan {
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 8rem;
+}
+
+.text_section_descvillan {
+    color: white;
+    text-align: center;
+    max-width: 92.1rem;
+    margin: auto;
+}
+
+.descvillan_titre  {
+    font-size: 4rem;
+}
+
+.descvillan_paragraphe  {
+    font-size: 1.7rem;
+    margin: 5rem auto;
+}
+
+.img_section_descvillan {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 130.1rem;
+}
+
+/* SECTION STYLE */
+
+.section_preferredstyle {
+    background-image: url("/assets/images/img_sect5.png");        
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10rem;
+    height: 90rem;
+    position: relative;
+}
+
+.cnt_1920 {
+    max-width: 192.0rem;
+}
+
+.section_preferredstyle::before,
+.section_preferredstyle::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 0.5px; 
+  background-color: rgba(255, 255, 255, 0.959); 
+}
+
+.section_preferredstyle::before {
+  left: 29%;
+}
+
+.section_preferredstyle::after {
+  left: 72%;
+}
+
+.text_section_preferredstyle {
+    text-align: center;
+    color: white;
+    padding-top: 35rem;
+    font-size: 3.5rem;
+    width: 100%;
+}
+
+.textes_section_preferredstyle {
+    display: flex;
+    margin: auto;
+    gap: 15rem;
+}
+
+.texte1 {
+    margin-top: 34rem;
+    font-size: 2.8rem;
+    width: 100%;
+}
+
+.texte2 {
+    flex-direction: column;
+    padding: 0 4rem;
+    margin-top: 3rem;
+    max-width: 200rem;
+}
+
+.texet2_titre {
+    font-size: 4rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+}
+
+.texte2_paragraphe {
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.texte3 {
+    margin-top: 34rem;
+    font-size: 2.8rem;
+    width: 100%;
+}
+
+/* SECTION WHYBUY */
+
+.cnt_1405 {
+    max-width: 140.5rem;
+}
+
+.wp_whybuy {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    position: relative;
+    margin: 8rem 5rem;
+}
+
+.titre_whybuy {
+    max-width: 30rem;
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
+.paragraphe_whybuy {
+    max-width: 70rem;
+}
+
+.paragraphe1_whybuy {
+    margin-bottom: 1.5rem;
+    font-size: 2.3rem;
+}
+
+.paragraphe2_whybuy {
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+}
+
+.wp_whybuy::after {
+    content: "";
+    width: 120rem;
+    background-color: #050505;
+    height: 1px;
+    position: absolute;
+    top: 55rem;
+}
+
+/* SECTION ADVANTAGES */
+
+.cnt_1200 {
+    max-width: 120.0rem;
+}
+
+.wp_advantages {
+    margin: 15rem auto;
+    flex-direction: column;
+}
+
+.textes_advantages {
+    max-width: 111rem;
+    margin: auto;
+}
+
+.titre_advantages {
+    margin: auto;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.paragraphe_advantages {
+    margin: auto;
+    font-size: 1.8rem;
+    margin-bottom: 10rem;
+}
+
+.para1_advantages, .para2_advantages {
+    margin-bottom: 2rem;
+}
+
+.img_advantages {
+    display: flex;
+    margin: auto;
+    max-width: 45rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* SECTION CONTACT (TEXTES) */
+
+.section_contact {
+    background-color: #686058;
+    max-width: 175rem;
+    margin: auto;
+}
+
+.cnt_1750 {
+    max-width: 175.0rem;
+}
+
+.textes_contact {
+    color: white;
+    margin: 10rem 0 10rem 25rem;
+}
+
+.titre_contact {
+    font-size: 3.5rem;
+    max-width: 20rem;
+    line-height: 3.5rem;
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+.para1_contact {
+    font-size: 2.5rem;
+    max-width: 30rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.para2_contact {
+    font-size: 2rem;
+    max-width: 40rem;
+    margin-bottom: 3rem;
+}
+
+.adresse_contact {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.sales_contact {
+    margin-top: 1.5rem;
+}
+
+/* SECTION CONTACT (FORM) */
+
+.contact_form {
+  max-width: 400rem;
+  margin: 10rem auto;
+}
+
+.noms_contact {
+    display: flex;
+    gap: 5rem;
+    margin: 10rem 10rem auto;
+}
+
+.firstname, .lastname {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.noms_contact input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    width: 35rem;
+}
+
+.email {
+    color: white;
+    margin: 5rem 2rem auto 5rem;
+}
+
+.email input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    width: 75rem;
+    margin: 2rem 2rem 1rem 5rem;
+}
+
+.country_phone {
+    display: flex;
+    gap: 5rem;
+    margin: 5rem 10rem auto;
+}
+
+.country_titre, .phone_titre {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.country_phone input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    width: 35rem;
+}
+
+.message {
+    color: white;
+    margin: 5rem 2rem 1rem 5rem;
+}
+
+.message_titre {
+    margin-left: 5rem;
+}
+
+.message input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    width: 75rem;
+    margin: 2rem 2rem 1rem 5rem;
+}
+
+.submit_btn {
+     margin-top: 6rem;
+}
+
+.submit_btn a {
+    padding: 1.8rem 5rem;
+    font-size: 1.4rem;
+    background-color: #E6DDCB;
+    border-radius: 3px;
+    color: black;
+    border: none;
+    margin-left: 10rem;
+    text-decoration: none;
+}
+
+.checkbox_liste {
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    gap: 5rem;
+}
+
+.checkbox_titre {
+    color: white;
+}
+
+.texte_check {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.checkbox_container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  user-select: none;
+}
+
+.checkbox_container input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Cercle */
+.checkmark {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 5rem; 
+  border: 2px solid #aaa;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/* Si checkbox cochée */
+.checkbox_container input:checked ~ .checkmark {
+  background-color: #f3ebeb;
+  border-color: #444444;
+}
+
+/* SECTION MORE VILLAS */
+
+.wp_morevillas {
+    margin: 8rem auto;
+    flex-direction: column;
+}
+
+.cnt_1725 {
+    max-width: 172.5rem;
+}
+
+.titre_morevillas {
+    margin: 6rem auto;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.img_morevillas {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.cnt_img_morevillas {
+    position: relative;
+    max-width: 70rem;
+}
+
+.texte_morevillas {
+    position: absolute;
+    bottom: 5rem;         
+    left: 8rem;           
+    color: white;     
+    font-size: 4rem;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+
+.footer {
+    width: 100%;
+    display: flex;
+}
+
+.wp_footer {
+    display: flex;
+    flex-direction: row;
+    gap: 18rem; 
+    background-color: #333;
+    justify-content: center;
+}
+
+.menu1_footer, .follow_us, .contact_us {
+    width: 20rem;
+    font-size: 1.5rem;
+}
+
+.menu1_footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.contact_us a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact_us h2, .follow_us h2 {
+    margin-bottom: 1.2rem;
+    color: white;
+}
+
+.follow_us_menu {
+    display: flex;
+    gap: 1rem;
+    margin: auto;
+}
+
+
