@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 async function loadContent() {
   try {
     // Remplace l’URL par celle de ton Umbraco + l’ID du contenu
-    const res = await fetch("http://localhost:38945/umbraco/section/content/workspace/document/edit/2dcc0f43-744b-43a5-86cb-f42416e35b21/invariant{2dcc0f43-744b-43a5-86cb-f42416e35b21}");
+    const res = await fetch("http://localhost:38945/umbraco/delivery/api/v1/content/{2dcc0f43-744b-43a5-86cb-f42416e35b21}");
     const data = await res.json();
 
     // Injection dans le HTML
