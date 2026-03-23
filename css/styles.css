@@ -1103,7 +1103,7 @@ section {
 /* SECTION STYLE */
 
 .section_preferredstyle {
-    background-image: url("/assets/images/img_sect5.png");        
+    background-image: url("../assets/images/img_sect5.png");       
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
